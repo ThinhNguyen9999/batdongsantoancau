@@ -1,47 +1,49 @@
 <div class="row">
-    <div class="col-md-4 order-md-2 mb-4 form-dang-ky">
-        <h4 class="mb-3">Billing address</h4>
-        <form class="needs-validation was-validated" novalidate="">
-          <div class="mb-3">
-              <input type="text" class="form-control" id="username" placeholder="Họ tên" required="">
-              <div class="invalid-feedback" style="width: 100%;">
-                Vui lòng nhập Họ tên.
-              </div>
-          </div>
-          <div class="mb-3">
-            <input type="number" class="form-control" id="email" placeholder="Số điện thoại">
-            <div class="invalid-feedback">
-              Vui lòng nhập Số điện thoại của bạn.
-            </div>
-          </div>
-          <div class="mb-3">
-            <input type="email" class="form-control" id="email" placeholder="you@example.com">
-            <div class="invalid-feedback">
-              Vui lòng nhập email của bạn.
-            </div>
-          </div>
-          <div class="mb-3">
-            <input type="text" class="form-control" id="address2" placeholder="Nội dung">
-          </div>
-          <hr class="mb-4">
-          <button class="btn btn-primary btn-lg btn-block" type="submit">Đăng ký</button>
-        </form>
+  <div class="col-md-4 order-md-2 mb-4 form-dang-ky">
+    <h4 class="mb-3">Form đăng ký</h4>
+    <div>
+      <div class="mb-3">
+        <input type="text" class="form-control" id="username" placeholder="Họ tên" [required]="true"
+          [(ngModel)]="userName">
       </div>
-    <div class="col-md-8 order-md-1">
-      <h4 class="mb-3">Giới thiệu</h4>
-      <div id="text-3651443166" class="text">
-        <p><strong>Công ty TNHH 1TV Đầu tư &amp; Phát triển Bất động sản Toàn Cầu</strong> được thành lập năm 2008, tên thương mai là Global Property, với định hướng phát triển theo hướng sàn giao dịch bất động sản hàng đầu tại những thành phố biển tiềm năng.</p>
-        <p>Mang sứ mệnh “<strong>Nơi niềm tin gửi trọn</strong>” chúng tôi mong muốn sẽ là nơi khách hàng, chủ đầu tư và các đối tác đặt trọn niềm tin vào từng sản phẩm do công ty triển khai.</p>
-        <p>Ban lãnh đạo cùng toàn thể nhân viên công ty luôn&nbsp; cố gắng hết mình, hướng tới mục tiêu tăng trưởng bền vững, mang giá trị nhân văn tới mọi nhà và cùng hướng tới một <strong>Global Property</strong> đoàn kết, kỷ luật, tri thức có tầm nhìn dài hạn.</p>
-        <p>Đồng thời, <strong>Global Property</strong> trở thành một thành viên tích cực tham gia các hoạt động xã hội, công tác thiện nguyên và đặc biệt đóng góp tích cực vào thành tựu chung của các cơ quan, tổ chức và hiệp hội trong lĩnh vực bất động sản nói chung và môi giới, phân phối bất động sản chuyên nghiệp nói riêng.</p>
-        <p>Sự tin tưởng của các chủ đầu tư, đối tác, khách hàng là nguồn động viên to lớn trên bước đường phát triển của <strong>Global Property</strong>. Chúng tôi đã, đang và sẽ không ngừng nỗ lực để từng bước trở thành hệ thống môi giới và tiếp thị hàng đầu theo hướng chuyên nghiệp hóa, hiện đại hóa.</p>
-                
-        <style>
+      <div class="mb-3">
+        <input type="text" class="form-control" id="phone" placeholder="Số điện thoại" [required]="true"
+          [(ngModel)]="phoneNumber">
+      </div>
+      <div class="mb-3">
+        <input type="text" class="form-control" id="email" placeholder="you@example.com" [(ngModel)]="email">
+      </div>
+      <div class="mb-3">
+        <input type="text" class="form-control" id="contactContent" placeholder="Nội dung" [(ngModel)]="contactContent">
+      </div>
+      <hr class="mb-4">
+      <button class="btn btn-primary btn-lg btn-block" type="submit" (click)="register()">Đăng ký</button>
+    </div>
+  </div>
+  <div class="col-md-8 order-md-1">
+    <h4 class="mb-3">Giới thiệu</h4>
+    <div id="text-3651443166" class="text">
+      <p><strong>Công ty TNHH 1TV Đầu tư &amp; Phát triển Bất động sản Toàn Cầu</strong> được thành lập năm 2008, tên
+        thương mai là Global Property, với định hướng phát triển theo hướng sàn giao dịch bất động sản hàng đầu tại
+        những thành phố biển tiềm năng.</p>
+      <p>Mang sứ mệnh “<strong>Nơi niềm tin gửi trọn</strong>” chúng tôi mong muốn sẽ là nơi khách hàng, chủ đầu tư và
+        các đối tác đặt trọn niềm tin vào từng sản phẩm do công ty triển khai.</p>
+      <p>Ban lãnh đạo cùng toàn thể nhân viên công ty luôn&nbsp; cố gắng hết mình, hướng tới mục tiêu tăng trưởng bền
+        vững, mang giá trị nhân văn tới mọi nhà và cùng hướng tới một <strong>Global Property</strong> đoàn kết, kỷ
+        luật, tri thức có tầm nhìn dài hạn.</p>
+      <p>Đồng thời, <strong>Global Property</strong> trở thành một thành viên tích cực tham gia các hoạt động xã hội,
+        công tác thiện nguyên và đặc biệt đóng góp tích cực vào thành tựu chung của các cơ quan, tổ chức và hiệp hội
+        trong lĩnh vực bất động sản nói chung và môi giới, phân phối bất động sản chuyên nghiệp nói riêng.</p>
+      <p>Sự tin tưởng của các chủ đầu tư, đối tác, khách hàng là nguồn động viên to lớn trên bước đường phát triển của
+        <strong>Global Property</strong>. Chúng tôi đã, đang và sẽ không ngừng nỗ lực để từng bước trở thành hệ thống
+        môi giới và tiếp thị hàng đầu theo hướng chuyên nghiệp hóa, hiện đại hóa.</p>
+
+      <style>
         #text-3651443166 {
           font-size: 0.9rem;
           line-height: 1.5;
         }
-        </style>
-            </div>
+      </style>
     </div>
   </div>
+</div>

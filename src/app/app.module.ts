@@ -13,6 +13,8 @@ import { DistributionProjectComponent } from './distribution-project/distributio
 import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
 import { SaleAndRentalComponent } from './sale-and-rental/sale-and-rental.component';
+import { ToastrModule } from 'ngx-toastr';
+import { ProjectIconComponent } from './distribution-project/project-icon/project-icon.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +26,15 @@ import { SaleAndRentalComponent } from './sale-and-rental/sale-and-rental.compon
     DistributionProjectComponent,
     NewsComponent,
     ContactComponent,
-    SaleAndRentalComponent
+    SaleAndRentalComponent,
+    ProjectIconComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
