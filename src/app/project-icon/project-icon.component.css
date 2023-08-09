@@ -1,0 +1,15 @@
+
+
+#section_1864517744 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#section_1864517744 .section-bg-overlay {
+  background-color: rgba(0, 0, 0, 0.686);
+}
+#section_1864517744 .section-bg.bg-loaded {
+  background-image: url(https://www.batdongsantoancau.vn/wp-content/uploads/2022/01/koo.png);
+}
+#section_1864517744 .section-bg {
+  background-position: 5% 75%;
+}

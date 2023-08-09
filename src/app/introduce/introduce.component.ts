@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
+import { EmailService } from '../_service/email.service';
 
 @Component({
   selector: 'app-introduce',
@@ -12,23 +14,30 @@ export class IntroduceComponent implements OnInit{
   phoneNumber: string = '';
   email: string = '';
   contactContent: string = 'Liên hệ';
+  formData!: FormGroup;
 
   constructor(
-    private toastr: ToastrService
+    private toastr: ToastrService,
+    private builder: FormBuilder,
+    private _sendEmailService: EmailService
     ) {
   }
   ngOnInit() {
-    
+    // this.formData = this.builder.group({
+    //   EmailAddress: new FormControl('',Validators.compose([Validators.required, Validators.email])),
+    //   Body: new FormControl('')
+    // })
   }
 
   register() {
     if (this.checkValidate()) {
+      this._sendEmailService.sendMessage(this.email);
       this.toastr.success("Đã gửi thông tin liên hệ");
     }
   }
 
   checkValidate() {
-    if (this.userName.length == 0) 
+    if (this.userName.length == 0)
     {
       this.toastr.warning("Vui lòng nhập Họ tên!");
       return false;

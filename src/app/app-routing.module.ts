@@ -10,11 +10,10 @@ import { SaleAndRentalComponent } from './sale-and-rental/sale-and-rental.compon
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'gioi-thieu', component: IntroduceComponent},
-  {path: 'du-an-phan-phoi', component: DistributionProjectComponent},
+  {path: 'du-an', component: DistributionProjectComponent},
   {path: 'tin-tuc', component: NewsComponent},
   {path: 'lien-he', component: ContactComponent},
   {path: 'ban-va-cho-thue', component: SaleAndRentalComponent},
-
 ];
 
 @NgModule({
