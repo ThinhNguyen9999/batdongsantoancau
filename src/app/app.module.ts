@@ -9,14 +9,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { IntroduceComponent } from './introduce/introduce.component';
-import { DistributionProjectComponent } from './distribution-project/distribution-project.component';
 import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
 import { SaleAndRentalComponent } from './sale-and-rental/sale-and-rental.component';
 import { ToastrModule } from 'ngx-toastr';
-import { DistributionProjectModule } from './distribution-project/distribution-project.module';
 import { HttpClientModule } from '@angular/common/http';
-import { EmailService } from './_service/email.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +24,7 @@ import { EmailService } from './_service/email.service';
     IntroduceComponent,
     NewsComponent,
     ContactComponent,
-    SaleAndRentalComponent,
+    SaleAndRentalComponent
   ],
   imports: [
     BrowserModule,
@@ -36,12 +33,9 @@ import { EmailService } from './_service/email.service';
     ReactiveFormsModule,
     HttpClientModule,
     ToastrModule.forRoot(),
-    DistributionProjectModule,
     AppRoutingModule
   ],
-  providers: [
-    EmailService
-  ],
+  providers: [],
   bootstrap: [
     AppComponent
   ]
