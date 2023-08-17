@@ -1,0 +1,17 @@
+#logo {
+  width: 113px;
+  margin-left: 0;
+  margin-right: 30px;
+}
+
+.btn-logo {
+  border: none;
+  background-color: white;
+}
+
+.fixed {
+  background-color: white;
+  position: sticky;
+  top:0;
+  z-index: 999;
+}

@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class ProjectIconComponent implements OnInit {
 
   ngOnInit() {
+    document.title = "Dự án Icon 40 - BĐS toàn cầu";
 
   }
 

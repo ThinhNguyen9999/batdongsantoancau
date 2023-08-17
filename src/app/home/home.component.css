@@ -52,45 +52,55 @@
   text-align: center;
 }
 
-
-.carousel {
-  margin-bottom: 4rem;
-  position: 'relative'
+.btn-card {
+  border: none;
+  background-color: white;
+  font-size: 1.25rem;
+  color: rgb(0, 44, 95);
+  font-weight: bold
 }
 
-.carousel-indicators {
-  position: absolute;
-  right: 0;
-  bottom: 10px;
-  left: 0;
-  z-index: 15;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding-left: 0;
-  margin-right: 15%;
-  margin-left: 15%;
-  list-style: none;
+.introduce {
+  color: white;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  background-color: rgb(5, 89, 119);
+  border-radius: 2%;
+  padding: 15px;
 }
 
-.carousel-inner {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+.info-text {
+  padding: 5px;
 }
 
-.carousel-item {
-  height: 55rem;
-  background-color: gray;
+.active-img {
+  background: linear-gradient(to bottom, rgba(-72, 56, 96, 0.8) 0%, rgba(73, 69, 74, 0.8) 100%), url("/assets/image/Home/linhvuchoatdong.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  color: white;
 }
 
-.carousel-control-prev {
-  left: 0;
+.active-card {
+  background: none;
+  border: none;
 }
 
-.carousel-control-next {
-  right: 0;
+.active-card:hover {
+  border: white;
+  border-style: dotted;
+  border-width: 1px;
+}
+
+.active-title {
+  text-align: center;
+  color: rgb(68, 154, 210);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.active-content {
+  color: white;
+  padding: 5px;
 }

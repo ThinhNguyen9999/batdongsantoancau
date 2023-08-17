@@ -10,6 +10,8 @@ export class DragonCastleComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    document.title = "Dragon Castle - BĐS toàn cầu";
+
   }
 
 }

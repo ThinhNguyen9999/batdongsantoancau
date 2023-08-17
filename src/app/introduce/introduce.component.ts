@@ -23,10 +23,7 @@ export class IntroduceComponent implements OnInit{
     ) {
   }
   ngOnInit() {
-    // this.formData = this.builder.group({
-    //   EmailAddress: new FormControl('',Validators.compose([Validators.required, Validators.email])),
-    //   Body: new FormControl('')
-    // })
+    document.title = "Giới thiệu - BĐS toàn cầu";
   }
 
   register() {
