@@ -1,6 +1,15 @@
 <main class="">
-
+  <div class="login_form form-img">
+    <img [src]="'../../assets/image/Home/' + images[currentSlideIndex]" alt="" class="img-bds"/>
+  </div>
   <div class="container">
+    <div class="carousel-caption-home text-carousel">
+      <h1 [textContent]="'' + textTitle[currentSlideIndex]"></h1>
+      <p class="opacity-75" [textContent]="'' + textContent[currentSlideIndex]"></p>
+      <button class="btn btn-search-duan" [routerLink]="'/' + textRouter[currentSlideIndex]">
+          <i class="fas fa-search me-2"></i>XEM DỰ ÁN
+      </button>
+    </div>
     <section>
       <div class="row row-small align-center row1" id="row-1924125409">
         <div id="col-1418601433" class="col medium-7 small-12 large-7" data-animate="bounceIn">

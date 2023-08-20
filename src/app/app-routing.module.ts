@@ -10,26 +10,17 @@ import { ProjectIconComponent } from './project-icon/project-icon.component';
 import { DragonCastleComponent } from './dragon-castle/dragon-castle.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
+  {path: 'trang-chu', component: HomeComponent,},
   {path: 'gioi-thieu', component: IntroduceComponent},
-  // {path: 'du-an', component: DistributionProjectComponent,
-  //   children:[
-  //     {
-  //       path:'icon-40',
-  //       loadChildren: () => import('./project-icon/project-icon.module').then(m => m.ProjectIconModule),
-  //     },
-  //     {
-  //       path:'dragon-castle',
-  //       loadChildren: () => import('./dragon-castle/dragon-castle.module').then(m => m.DragonCastleModule),
-  //     }
-  //   ]
-  // },
   {path: 'tin-tuc', component: NewsComponent},
   {path: 'lien-he', component: ContactComponent},
   {path: 'ban-va-cho-thue', component: SaleAndRentalComponent},
   {path: 'du-an', component: DistributionProjectComponent},
   {path: 'du-an/icon-40', component: ProjectIconComponent},
   {path: 'du-an/dragon-castle', component: DragonCastleComponent},
+  {path: 'du-an/ha-long-star', component: DragonCastleComponent},
+  {path: 'du-an/the-astro-halong-bay', component: DragonCastleComponent},
+  {path: '', redirectTo: '/trang-chu', pathMatch: 'full'}
 ];
 
 @NgModule({

@@ -7,11 +7,16 @@ import { map } from 'rxjs';
 })
 export class EmailService {
 
-  private url = ""
+private emailUrl = 'http://localhost:3000/send-email';
 
-constructor(private _httpClient: HttpClient) { }
+constructor(private http: HttpClient) { }
 
-  sendMessage(body: any) {
-    return this._httpClient.post('http://localhost:3000/sendmail', body);
-  }
+sendEmail(name: string, email: string, message: string) {
+  const data = {
+    name: name,
+    email: email,
+    message: message
+  };
+  return this.http.post(this.emailUrl, data);
+}
 }

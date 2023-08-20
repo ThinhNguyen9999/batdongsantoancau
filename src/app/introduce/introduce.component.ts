@@ -26,11 +26,18 @@ export class IntroduceComponent implements OnInit{
     document.title = "Giới thiệu - BĐS toàn cầu";
   }
 
+  onSubmit() {
+    this._sendEmailService.sendEmail(this.userName, this.email, this.contactContent).subscribe(
+      response => {
+        console.log('Email sent successfully!');
+      },
+      error => {
+        console.log('Error sending email:', error);
+      }
+    );
+  }
+
   register() {
-    if (this.checkValidate()) {
-      this._sendEmailService.sendMessage(this.email);
-      this.toastr.success("Đã gửi thông tin liên hệ");
-    }
   }
 
   checkValidate() {
