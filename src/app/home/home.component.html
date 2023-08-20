@@ -1,13 +1,13 @@
 <main class="">
-  <div class="login_form form-img">
-    <img [src]="'../../assets/image/Home/' + images[currentSlideIndex]" alt="" class="img-bds"/>
+  <div class="form-img">
+    <img [src]="'../../assets/image/Home/' + images[currentSlideIndex]" alt="" class="img-bds" />
   </div>
   <div class="container">
     <div class="carousel-caption-home text-carousel">
       <h1 [textContent]="'' + textTitle[currentSlideIndex]"></h1>
       <p class="opacity-75" [textContent]="'' + textContent[currentSlideIndex]"></p>
       <button class="btn btn-search-duan" [routerLink]="'/' + textRouter[currentSlideIndex]">
-          <i class="fas fa-search me-2"></i>XEM DỰ ÁN
+        <i class="fas fa-search me-2"></i>XEM DỰ ÁN
       </button>
     </div>
     <section>
@@ -83,8 +83,10 @@
       </div>
     </section>
     <hr class="my-3" />
-    <!--Section: Content-->
-    <section>
+  </div>
+  <!--Section: Dự án bất động sản-->
+  <section>
+    <div class="container">
       <div class="row row-small align-center row1" id="row-1924125409">
         <div id="col-1418601433" class="col medium-7 small-12 large-7" data-animate="bounceIn">
           <div class="col-inner text-center">
@@ -246,99 +248,105 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <div class="row row-small align-center row1" id="row-1924125409">
-        <div id="col-1418601433" class="col medium-7 small-12 large-7" data-animate="bounceIn">
-          <div class="col-inner text-center">
-            <div id="text-746991030" class="text">
-              <h1><strong>VỀ CHÚNG TÔI</strong></h1>
-            </div>
-            <div class="img has-hover x md-x lg-x y md-y lg-y">
-              <div class="img-inner dark" style="margin:-11px 0px -11px 0px;">
-                <img width="333" height="38"
-                  src="https://www.batdongsantoancau.vn/wp-content/uploads/2022/01/1547197584-nvgsk.png"
-                  class="attachment-original size-original" alt="" decoding="async" loading="lazy"
-                  srcset="https://www.batdongsantoancau.vn/wp-content/uploads/2022/01/1547197584-nvgsk.png 333w, https://www.batdongsantoancau.vn/wp-content/uploads/2022/01/1547197584-nvgsk-300x34.png 300w"
-                  sizes="(max-width: 333px) 100vw, 333px" />
+  <!-- Về chúng tôi -->
+  <section>
+    <div class="our-img">
+      <div class="container">
+        <div class="row row-small align-center row1" id="row-1924125409">
+          <div id="col-1418601433" class="col medium-7 small-12 large-7" data-animate="bounceIn">
+            <div class="col-inner text-center">
+              <div id="text-746991030" class="text">
+                <h1><strong>VỀ CHÚNG TÔI</strong></h1>
+              </div>
+              <div class="img has-hover x md-x lg-x y md-y lg-y">
+                <div class="img-inner dark" style="margin:-11px 0px -11px 0px;">
+                  <img width="333" height="38"
+                    src="https://www.batdongsantoancau.vn/wp-content/uploads/2022/01/1547197584-nvgsk.png"
+                    class="attachment-original size-original" alt="" decoding="async" loading="lazy"
+                    srcset="https://www.batdongsantoancau.vn/wp-content/uploads/2022/01/1547197584-nvgsk.png 333w, https://www.batdongsantoancau.vn/wp-content/uploads/2022/01/1547197584-nvgsk-300x34.png 300w"
+                    sizes="(max-width: 333px) 100vw, 333px" />
+                </div>
+              </div>
+              <div id="text-1450351932" class="text mt-3">
+                <p>Công ty TNHH 1TV Đầu tư & Phát triển Bất động sản Toàn Cầu<br />
               </div>
             </div>
-            <div id="text-1450351932" class="text mt-3">
-              <p>Công ty TNHH 1TV Đầu tư & Phát triển Bất động sản Toàn Cầu<br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-12 mb-4">
+            <div class="card">
+              <div class="card text-center border border-primary shadow-0">
+                <div class="card-body">
+                  <div id="text-880427583" class="text">
+                    <h1 class="alt-font" style="font-family: 'Great Vibes', cursive;"><strong>Chữ Tâm</strong></h1>
+                  </div>
+                  <div id="text-3659671470" class="text">
+                    <p>Khách hàng của <strong>Bất Động Sản Global Property</strong> luôn được thành viên của công ty phục
+                      vụ bằng cái <strong>TÂM</strong>. Luôn thẳng thắn, chân thành để đem đến những giá trị tốt nhất cho
+                      Khách hàng của mình.<br></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 mb-4">
+            <div class="card">
+              <div class="card text-center border border-primary shadow-0">
+                <div class="card-body">
+                  <div id="text-880427583" class="text">
+                    <h1 class="alt-font" style="font-family: 'Great Vibes', cursive;"><strong>Chữ Tín</strong></h1>
+                  </div>
+                  <div id="text-3659671470" class="text">
+                    <p>Lấy chữ <strong>TÍN</strong> làm đầu, giao dịch cùng <strong>Bất Động Sản Global Property</strong>
+                      Khách hàng được đảm bảo các vấn đề: chất lượng, giá cả, thủ tục hỗ trợ trước và sau quá trình giao
+                      dịch cùng khách hàng.<br></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 mb-4">
+            <div class="card">
+              <div class="card text-center border border-primary shadow-0">
+                <div class="card-body">
+                  <div id="text-880427583" class="text">
+                    <h1 class="alt-font" style="font-family: 'Great Vibes', cursive;"><strong>Chữ Tài</strong></h1>
+                  </div>
+                  <div id="text-3659671470" class="text">
+                    <p>Những con người tại <strong>Bất Động Sản Global Property</strong> đều là những nhân
+                      <strong>TÀI</strong>, có đam mê, nhiệt huyết, kiến thức để trở thành những chuyên viên môi giới
+                      chuyên nghiệp hàng đầu Việt Nam.<br></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 mb-4">
+            <div class="card">
+              <div class="card text-center border border-primary shadow-0">
+                <div class="card-body">
+                  <div id="text-880427583" class="text">
+                    <h1 class="alt-font" style="font-family: 'Great Vibes', cursive;"><strong>Chữ Tầm</strong></h1>
+                  </div>
+                  <div id="text-3659671470" class="text">
+                    <p>Mục đích cuối cùng của <strong>Bất Động Sản Global Property</strong> là khẳng định giá trình vượt
+                      trội của bản thân, của tập thể sao cho xứng <strong>TẦM</strong> là đơn vị phân phối bất động sản
+                      hàng đầu Việt Nam.<br></p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-12 mb-4">
-          <div class="card">
-            <div class="card text-center border border-primary shadow-0">
-              <div class="card-body">
-                <div id="text-880427583" class="text">
-                  <h1 class="alt-font" style="font-family: 'Great Vibes', cursive;"><strong>Chữ Tâm</strong></h1>
-                </div>
-                <div id="text-3659671470" class="text">
-                  <p>Khách hàng của <strong>Bất Động Sản Global Property</strong> luôn được thành viên của công ty phục
-                    vụ bằng cái <strong>TÂM</strong>. Luôn thẳng thắn, chân thành để đem đến những giá trị tốt nhất cho
-                    Khách hàng của mình.<br></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-12 mb-4">
-          <div class="card">
-            <div class="card text-center border border-primary shadow-0">
-              <div class="card-body">
-                <div id="text-880427583" class="text">
-                  <h1 class="alt-font" style="font-family: 'Great Vibes', cursive;"><strong>Chữ Tín</strong></h1>
-                </div>
-                <div id="text-3659671470" class="text">
-                  <p>Lấy chữ <strong>TÍN</strong> làm đầu, giao dịch cùng <strong>Bất Động Sản Global Property</strong>
-                    Khách hàng được đảm bảo các vấn đề: chất lượng, giá cả, thủ tục hỗ trợ trước và sau quá trình giao
-                    dịch cùng khách hàng.<br></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-12 mb-4">
-          <div class="card">
-            <div class="card text-center border border-primary shadow-0">
-              <div class="card-body">
-                <div id="text-880427583" class="text">
-                  <h1 class="alt-font" style="font-family: 'Great Vibes', cursive;"><strong>Chữ Tài</strong></h1>
-                </div>
-                <div id="text-3659671470" class="text">
-                  <p>Những con người tại <strong>Bất Động Sản Global Property</strong> đều là những nhân
-                    <strong>TÀI</strong>, có đam mê, nhiệt huyết, kiến thức để trở thành những chuyên viên môi giới
-                    chuyên nghiệp hàng đầu Việt Nam.<br></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-12 mb-4">
-          <div class="card">
-            <div class="card text-center border border-primary shadow-0">
-              <div class="card-body">
-                <div id="text-880427583" class="text">
-                  <h1 class="alt-font" style="font-family: 'Great Vibes', cursive;"><strong>Chữ Tầm</strong></h1>
-                </div>
-                <div id="text-3659671470" class="text">
-                  <p>Mục đích cuối cùng của <strong>Bất Động Sản Global Property</strong> là khẳng định giá trình vượt
-                    trội của bản thân, của tập thể sao cho xứng <strong>TẦM</strong> là đơn vị phân phối bất động sản
-                    hàng đầu Việt Nam.<br></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Lĩnh vực hoạt động -->
-  </div>
+    </div>
+  </section>
+
+  <!-- Lĩnh vực hoạt động -->
   <section>
     <div class="active-img">
       <div class="container">

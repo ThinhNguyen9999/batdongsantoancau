@@ -1,3 +1,14 @@
 <app-nav></app-nav>
 <router-outlet></router-outlet>
+<div class="to-bottom-left">
+  <div>
+    <a class="btn btn-sm zalo-text mb-3" href="https://zalo.me/0949658615" role="button">Chat Zalo</a>
+  </div>
+  <div>
+    <a class="btn btn-sm phone-text" role="button">0339916237</a>
+  </div>
+</div>
+<div class="to-top" (click)="scrollToTop()" [ngClass]="{ 'show-scrollTop': windowScrolled }">
+  <a id="back-to-top" class="btn back-to-top space" role="button"><i class="fas fa-space-shuttle fa-rotate-270"></i></a>
+</div>
 <app-footer></app-footer>

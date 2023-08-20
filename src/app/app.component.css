@@ -1,0 +1,109 @@
+
+.to-bottom-left {
+  bottom: 0;
+  cursor: pointer;
+  margin: 0px 0px 20px 20px;
+  position: fixed;
+  left: 0;
+  opacity: 1;
+}
+
+.to-top {
+  bottom: 0;
+  cursor: pointer;
+  margin: 0 8px 12px 0;
+  position: fixed;
+  right: 0;
+  opacity: 0;
+}
+
+.show-scrollTop {
+  opacity: 1 !important;
+  transition: all 0.1s ease-in-out;
+}
+
+.space {
+  color: #ffbd59;
+  border-width: 2px;
+  border-color: gray;
+  border-radius: 20px;
+   -moz-border-radius: 20px;
+   -webkit-border-radius: 20px;
+}
+.space:hover {
+  background-color: #446084;
+}
+
+.phone-text {
+  color: white;
+  background:#ff4800;
+  font-size:20px;
+  font-weight:bold;
+  border-color: white;
+  border-radius: 20px;
+  border-width: 2px;
+   -moz-border-radius: 20px;
+   -webkit-border-radius: 20px;
+  -webkit-animation: phoneText 1s infinite;
+  -moz-animation: phoneText 1s infinite;
+  -o-animation: phoneText 1s infinite;
+  animation: phoneText 1s infinite;
+}
+
+@-webkit-keyframes phoneText {
+  0% { color: #ffbd59; }
+  50% { color: #fff;  }
+  100% { color: #ffbd59;  }
+}
+@-moz-keyframes phoneText {
+  0% { color: #ffbd59;  }
+  50% { color: #fff;  }
+  100% { color: #ffbd59;  }
+}
+@-o-keyframes phoneText {
+  0% { color: #ffbd59; }
+  50% { color: #fff; }
+  100% { color: #ffbd59;  }
+}
+@keyframes phoneText {
+  0% { color: #ffbd59;  }
+  50% { color: #fff;  }
+  100% { color: #ffbd59;  }
+}
+
+.zalo-text {
+  color: white;
+  background:#3e8ffc;
+  font-size:20px;
+  font-weight:bold;
+  border-radius: 20px;
+  border-color: white;
+  border-width: 2px;
+   -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -webkit-animation: phoneText 1s infinite;
+  -moz-animation: phoneText 1s infinite;
+  -o-animation: phoneText 1s infinite;
+  animation: phoneText 1s infinite;
+}
+
+@-webkit-keyframes phoneText {
+  0% { color: #ffbd59; }
+  50% { color: #fff;  }
+  100% { color: #ffbd59;  }
+}
+@-moz-keyframes phoneText {
+  0% { color: #ffbd59;  }
+  50% { color: #fff;  }
+  100% { color: #ffbd59;  }
+}
+@-o-keyframes phoneText {
+  0% { color: #ffbd59; }
+  50% { color: #fff; }
+  100% { color: #ffbd59;  }
+}
+@keyframes phoneText {
+  0% { color: #ffbd59;  }
+  50% { color: #fff;  }
+  100% { color: #ffbd59;  }
+}

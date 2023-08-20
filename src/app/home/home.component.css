@@ -73,8 +73,19 @@
   padding: 5px;
 }
 
+.our-img {
+  background: url("../../assets/image/Home/background4chu.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
 .active-img {
-  background: linear-gradient(to bottom, rgba(-72, 56, 96, 0.8) 0%, rgba(73, 69, 74, 0.8) 100%), url("/assets/image/Home/linhvuchoatdong.png");
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+  ), url("../../assets/image/Home/linhvuchoatdong1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;

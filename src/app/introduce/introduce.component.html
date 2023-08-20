@@ -2,6 +2,22 @@
   <div class="row mt-3">
     <div class="col-md-4 order-md-2 mb-4 form-dang-ky">
       <h4 class="mb-3">Form đăng ký</h4>
+        <form target="_blank" action="https://formsubmit.co/phuongvy.globalproperty@gmail.com" method="POST">
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col mb-2">
+                <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+              </div>
+              <div class="col mb-2">
+                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group mb-2">
+            <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-lg btn-dark btn-block mb-2">Gửi thông tin liên hệ</button>
+        </form>
       <!-- <div>
         <div class="mb-3">
           <input type="text" class="form-control" id="username" placeholder="Họ tên" [required]="true" [(ngModel)]="userName">
@@ -18,27 +34,31 @@
         <hr class="mb-4">
         <button class="btn btn-primary btn-lg btn-block" type="submit" (click)="register()">Đăng ký</button>
       </div> -->
-      <div>
-        <div class="contact-form-wrapper d-flex justify-content-center">
-          <form (ngSubmit)="onSubmit()" class="contact-form">
-            <h5 class="title">Contact us</h5>
-            <p class="description">{{ "Lets talk about everything!"}}
-            </p>
-            <div>
-              <input type="text" class="form-control rounded border-white mb-3 form-input" [(ngModel)]="userName" name="userName" placeholder="Name" required>
+      <!-- <form style="width: 50%; margin: auto">
+          <h1>Material Form</h1>
+          <div style="width: 100%">
+            <input matInput placeholder="Name" [formControl]="nameFormControl" />
+            <div *ngIf="nameFormControl.hasError('minlength')">
+              Name must be at least 4 characters long.
             </div>
-            <div>
-              <input type="email" class="form-control rounded border-white mb-3 form-input" [(ngModel)]="email" name="email" placeholder="Email" required>
+            <div *ngIf="nameFormControl.hasError('required')">
+              Name is <strong>required</strong>
             </div>
-            <div>
-              <textarea class="form-control rounded border-white mb-3 form-text-area" [(ngModel)]="contactContent" name="message" rows="5" cols="30" placeholder="Message" required></textarea>
+          </div>
+          <div style="width: 100%">
+            <input matInput placeholder="Email" [formControl]="emailFormControl"/>
+            <div *ngIf="emailFormControl.hasError('email')">
+              Please enter a valid email address
             </div>
-            <div class="submit-button-wrapper">
-              <button type="submit">Send</button>
+            <div *ngIf="emailFormControl.hasError('required')">
+              Email is <strong>required</strong>
             </div>
-          </form>
-        </div>
-      </div>
+          </div>
+          <button [disabled]="emailFormControl.invalid || nameFormControl.invalid || loading"
+            color="primary" (click)="register()">
+            {{buttionText}}
+          </button>
+      </form> -->
     </div>
     <div class="col-md-8 order-md-1">
       <h4 class="mb-3">Giới thiệu</h4>
