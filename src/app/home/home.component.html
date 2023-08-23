@@ -5,7 +5,7 @@
   <div class="container">
     <div class="carousel-caption-home text-carousel">
       <h1 [textContent]="'' + textTitle[currentSlideIndex]"></h1>
-      <p class="opacity-75" [textContent]="'' + textContent[currentSlideIndex]"></p>
+      <p [textContent]="'' + textContent[currentSlideIndex]"></p>
       <button class="btn btn-search-duan" [routerLink]="'/' + textRouter[currentSlideIndex]">
         <i class="fas fa-search me-2"></i>XEM DỰ ÁN
       </button>
@@ -121,7 +121,7 @@
             </div>
             <div class="card-header text-center" style="color: rgb(50, 150, 19);">Đang mở bán</div>
             <div class="card-body">
-              <button class="card-title btn-card" routerLink="/du-an/icon-40">Dự án ICON 40 Hạ Long</button>
+              <button class="card-title btn-card" routerLink="/du-an/icon-40" >Dự án ICON 40 Hạ Long</button>
               <p class="card-text"><i class="fas fa-map-marked-alt me-2" style="color: #fb2828;"></i>Trục đường Hoàng
                 Quốc Việt, ô đất H5-2, Lô đất H5, Phường Hùng Thắng, Thành phố Hạ Long.
               </p>

@@ -1,130 +1,262 @@
 <div class="container mt-5">
-  <div class="row">
+  <div class="row spaceText">
+    <div class="col-md-6 order-md-1">
+      <div class="carousel slide mb-6">
+        <div class="form-img">
+          <img [src]="'../../assets/image/Home/' + images[currentSlideIndex]" alt="" class="img-bds" />
+        </div>
+        <button class="carousel-control-prev" type="button" (click)="changeImg('prev')">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" (click)="changeImg('next')">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
     <div class="col-md-6 order-md-2 mb-4 form-dang-ky">
       <h4 class="mb-3">Dự án ICON 40 HẠ LONG</h4>
     </div>
-    <div class="col-md-6 order-md-1">
-
-    </div>
   </div>
   <div class="product-footer">
-    <div class="container">
-      <div class="woocommerce-tabs wc-tabs-wrapper container tabbed-content">
-        <div class="tab-panels">
-          <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content active"
-            id="tab-description" role="tabpanel" aria-labelledby="tab-title-description">
-            <p><span style="font-size: 110%;"><strong>ICON40</strong> được định danh là tổ hợp căn hộ cao cấp bậc nhất
-                bên Vịnh di sản, một nơi an cư và ngôi nhà thứ hai đáp ứng nhu cầu: sống – nghỉ dưỡng và kinh doanh lý
-                tưởng. Đó chính là tận hưởng sự tiện nghi, hiện đại của 365 ngày nghỉ dưỡng tại gia, chạm vào nhịp sống
-                sôi động với các hoạt động vui chơi, giải trí đẳng cấp bên bờ Vịnh.</span></p>
-            <p><span style="font-size: 110%;"><strong>Tên dự án</strong>: ICON40</span></p>
-            <p><span style="font-size: 110%;"><strong>Vị trí</strong>: Trục đường Hoàng Quốc Việt, ô đất H5-2, Lô đất
-                H5, Khu đô thị dịch vụ Hùng Thắng, Phường Hùng Thắng, Thành phố Hạ Long, Tỉnh Quảng Ninh.</span></p>
-            <table>
-              <tbody>
-                <tr>
-                  <td><span style="font-size: 110%;"><strong>Chủ đầu tư</strong>: BIM LAND</span></td>
-                  <td><span style="font-size: 110%;"><strong>Số lượng</strong>: 794 căn</span></td>
-                </tr>
-                <tr>
-                  <td><span style="font-size: 110%;"><strong>Đơn vị thi công</strong>: Unicons</span></td>
-                  <td><span style="font-size: 110%;"><b>Mật độ xây dựng:&nbsp;</b>80%</span></td>
-                </tr>
-                <tr>
-                  <td><span style="font-size: 110%;"><strong>Loại hình</strong>: Căn hộ</span></td>
-                  <td><span style="font-size: 110%;"><strong>Số tầng</strong>: 40 tầng</span></td>
-                </tr>
-                <tr>
-                  <td><span style="font-size: 110%;"><strong>Diện tích đa dạng</strong>: 38 - 282m2</span></td>
-                </tr>
-              </tbody>
-            </table>
-            <p style="text-align: center;"><img decoding="async" loading="lazy"
-                class="alignnone size-large wp-image-2093"
-                src="../../assets/image/Icon-40/home.jpg"
-                alt="" width="1020" height="574"
-                srcset="https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4457100795990_2467cebc5ec3aa71fcfa3feaebcb4579-1024x576.jpg 1024w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4457100795990_2467cebc5ec3aa71fcfa3feaebcb4579-300x169.jpg 300w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4457100795990_2467cebc5ec3aa71fcfa3feaebcb4579-768x432.jpg 768w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4457100795990_2467cebc5ec3aa71fcfa3feaebcb4579-1536x864.jpg 1536w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4457100795990_2467cebc5ec3aa71fcfa3feaebcb4579-2048x1152.jpg 2048w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4457100795990_2467cebc5ec3aa71fcfa3feaebcb4579-500x281.jpg 500w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4457100795990_2467cebc5ec3aa71fcfa3feaebcb4579-885x498.jpg 885w"
-                sizes="(max-width: 1020px) 100vw, 1020px"><span style="font-size: 80%;"><em>Hình ảnh tháp Icon 40 giữa trung tâm du lịch</em></span></p>
-            <h3 style="text-align: center;"><strong>QUẦN THỂ TIỆN ÍCH KIẾN TẠO CHẤT SỐNG SANG</strong></h3>
-            <p><span style="font-size: 110%;">Được định hướng để trở thành nơi an cư của cộng đồng đẳng cấp với lối sống
-                vượt trội hoàn toàn mới, tại&nbsp;<strong>ICON40</strong>, hệ thống tiện ích nội khu được thiết kế vừa
-                lưu giữ nếp sống “người Hạ Long”, ” vừa được trải nghiệm phong cách sống sang với tổ ích tiện ích, dịch
-                vụ, giải trí “All-in-one”, ứng dụng công nghệ vào vận hành dự án…..</span></p>
-            <p><img decoding="async" loading="lazy" class="alignnone wp-image-2106 size-large"
-                src="https://batdongsantoancau.vn/wp-content/uploads/2023/03/z4507127782634_2cdbc93d1a03d28fc3ac40ee26168c09-1024x574.jpg"
-                alt="" width="1020" height="572"
-                srcset="https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4507127782634_2cdbc93d1a03d28fc3ac40ee26168c09-1024x574.jpg 1024w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4507127782634_2cdbc93d1a03d28fc3ac40ee26168c09-300x168.jpg 300w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4507127782634_2cdbc93d1a03d28fc3ac40ee26168c09-768x430.jpg 768w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4507127782634_2cdbc93d1a03d28fc3ac40ee26168c09-1536x860.jpg 1536w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4507127782634_2cdbc93d1a03d28fc3ac40ee26168c09-2048x1147.jpg 2048w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4507127782634_2cdbc93d1a03d28fc3ac40ee26168c09-500x280.jpg 500w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4507127782634_2cdbc93d1a03d28fc3ac40ee26168c09-885x496.jpg 885w"
-                sizes="(max-width: 1020px) 100vw, 1020px"></p>
-            <h3 style="text-align: center;"><strong>CẬN KỀ HỆ SINH THÁI GIẢI TRÍ MUA SẮM ĐA DẠNG</strong></h3>
-            <p><span style="font-size: 110%;">Năng động và thời thượng, thiết lập chuẩn mực sống trên tầm cao theo những
-                tiêu chuẩn xa xỉ,&nbsp;<strong>ICON40</strong>&nbsp;vừa đủ xa để an nhiên sống hưởng trong không gian
-                sang trọng tựa những kỳ nghỉ dưỡng, vừa đủ gần để dễ dàng kết nối với những giá trị thượng đỉnh sánh tầm
-                quốc tế trong khu đô thị Hạ Long Marina với hệ sinh thái ẩm thực, giải trí, mua sắm, giáo dục… đẳng
-                cấp.</span></p>
-            <p><span style="font-size: 110%;">Với thiết kế thông minh, mật độ thấp chủ đầu tư đã dành ra <em>20% không
-                  gian</em> để làm tiện ích phục vụ cư dân</span></p>
-            <p><img decoding="async" loading="lazy" class="alignnone size-large wp-image-2096"
-                src="https://batdongsantoancau.vn/wp-content/uploads/2023/03/z4459366368460_14277aae66cef88b4ae73e8b22897c61-1024x502.jpg"
-                alt="" width="1020" height="500"
-                srcset="https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4459366368460_14277aae66cef88b4ae73e8b22897c61-1024x502.jpg 1024w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4459366368460_14277aae66cef88b4ae73e8b22897c61-300x147.jpg 300w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4459366368460_14277aae66cef88b4ae73e8b22897c61-768x377.jpg 768w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4459366368460_14277aae66cef88b4ae73e8b22897c61-500x245.jpg 500w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4459366368460_14277aae66cef88b4ae73e8b22897c61-885x434.jpg 885w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4459366368460_14277aae66cef88b4ae73e8b22897c61.jpg 1144w"
-                sizes="(max-width: 1020px) 100vw, 1020px"></p>
-            <h3 style="text-align: center;"><strong>BIỂU TƯỢNG TRUNG TÂM MỚI HẠ LONG&nbsp;</strong></h3>
-            <p><span style="font-size: 110%;">Đồng hành cùng sự phát triển “bứt tốc” của cửa ngõ phía Tây để trở thành
-                trung tâm mới của thành phố,<strong>&nbsp;ICON40</strong>&nbsp;sở hữu những thế mạnh nội tại hoàn hảo để
-                trở thành mảnh đất vàng đắt giá bậc nhất trong tương lai.</span></p>
-            <p><span style="font-size: 110%;">Vươn mình đầy kiêu hãnh với tầm vóc tòa tháp cao nhất khu vực, một trạm
-                năng lượng tái tạo sức khỏe, tinh thần cho mỗi du khách hay chủ nhân các căn hộ – được xem như những
-                secondhome đẳng cấp thuộc tòa tháp 40&nbsp; tầng bên Vịnh kỳ quan này.</span></p>
-            <p><img decoding="async" loading="lazy" class="alignnone wp-image-2105 size-large"
-                src="https://batdongsantoancau.vn/wp-content/uploads/2023/03/z4507127804646_57326c307432a341845a2a7417f0f7bc-914x1024.jpg"
-                alt="" width="914" height="1024"
-                srcset="https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4507127804646_57326c307432a341845a2a7417f0f7bc-914x1024.jpg 914w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4507127804646_57326c307432a341845a2a7417f0f7bc-268x300.jpg 268w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4507127804646_57326c307432a341845a2a7417f0f7bc-768x860.jpg 768w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4507127804646_57326c307432a341845a2a7417f0f7bc-1371x1536.jpg 1371w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4507127804646_57326c307432a341845a2a7417f0f7bc-1828x2048.jpg 1828w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4507127804646_57326c307432a341845a2a7417f0f7bc-500x560.jpg 500w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4507127804646_57326c307432a341845a2a7417f0f7bc-885x991.jpg 885w"
-                sizes="(max-width: 914px) 100vw, 914px"></p>
-            <h3 style="text-align: center;"><strong>KIÊU HÃNH KIẾN TRÚC BIỂU TƯỢNG GIỮA VỊNH BIỂN</strong></h3>
-            <p><span style="font-size: 110%;"><strong>ICON40</strong>&nbsp;tạo nên tác phẩm nghệ thuật vượt thời gian
-                bởi lối kiến trúc mang cảm hứng thiên nhiên di sản hòa cùng nét chấm phá đương đại. Sự kết hợp đa dạng
-                các chất liệu tự nhiên: shape đá, vertical garden… đã làm nên dáng hình của “đỉnh tháp vàng” ICON40 –
-                dấu ấn tượng trưng cho kỳ vọng vươn cao, kiêu hãnh hướng về Vịnh biển. Đón trọn ánh nắng bình minh và
-                nguồn năng lượng mới, ICON40 trở thành tâm điểm phồn vinh cho dòng tiền đầu tư cùng trải nghiệm sống –
-                nghỉ dưỡng – làm việc tối ưu.</span></p>
-            <p><img decoding="async" loading="lazy" class="alignnone wp-image-2078 size-full"
-                src="https://batdongsantoancau.vn/wp-content/uploads/2023/03/phoi-canh-kien-truc.jpg" alt=""
-                width="2000" height="1000"
-                srcset="https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/phoi-canh-kien-truc.jpg 2000w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/phoi-canh-kien-truc-300x150.jpg 300w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/phoi-canh-kien-truc-1024x512.jpg 1024w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/phoi-canh-kien-truc-768x384.jpg 768w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/phoi-canh-kien-truc-1536x768.jpg 1536w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/phoi-canh-kien-truc-500x250.jpg 500w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/phoi-canh-kien-truc-885x443.jpg 885w"
-                sizes="(max-width: 2000px) 100vw, 2000px"></p>
-            <h2 style="text-align: center;"><strong>MẶT BẰNG TẦNG ĐIỂN HÌNH</strong></h2>
-            <p><strong><span style="font-size: 110%;">Mỗi tầng căn hộ được bố trí 25 căn</span></strong></p>
-            <p><em><span style="font-size: 110%;">• Căn studio: 16 căn</span></em></p>
-            <p><em><span style="font-size: 110%;">• 1 ngủ + 1: 3 căn</span></em></p>
-            <p><em><span style="font-size: 110%;">• 2 ngủ 2 wc: &nbsp;5 căn</span></em></p>
-            <p><em><span style="font-size: 110%;">• 3 ngủ: 1 căn</span></em></p>
-            <p><img decoding="async" loading="lazy" class="alignnone wp-image-2090 size-full"
-                src="https://batdongsantoancau.vn/wp-content/uploads/2023/03/ICON40_MB-Tang-dien-hinh.png" alt=""
-                width="2000" height="1414"
-                srcset="https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/ICON40_MB-Tang-dien-hinh.png 2000w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/ICON40_MB-Tang-dien-hinh-300x212.png 300w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/ICON40_MB-Tang-dien-hinh-1024x724.png 1024w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/ICON40_MB-Tang-dien-hinh-768x543.png 768w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/ICON40_MB-Tang-dien-hinh-1536x1086.png 1536w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/ICON40_MB-Tang-dien-hinh-500x354.png 500w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/ICON40_MB-Tang-dien-hinh-885x626.png 885w"
-                sizes="(max-width: 2000px) 100vw, 2000px"></p>
-            <h3 style="text-align: center;"><strong>CHÍNH SÁCH BÁN HÀNG 14 ĐỢT – <span style="color: #ed1c24;">CHIẾT
-                  KHẤU LÊN ĐẾN 15%</span></strong></h3>
-            <p><img decoding="async" loading="lazy" class="alignnone size-full wp-image-2098"
-                src="https://batdongsantoancau.vn/wp-content/uploads/2023/03/z4459365125307_1463f5cdeaa65186f46374a1411d1395.jpg"
-                alt="" width="1002" height="912"
-                srcset="https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4459365125307_1463f5cdeaa65186f46374a1411d1395.jpg 1002w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4459365125307_1463f5cdeaa65186f46374a1411d1395-300x273.jpg 300w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4459365125307_1463f5cdeaa65186f46374a1411d1395-768x699.jpg 768w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4459365125307_1463f5cdeaa65186f46374a1411d1395-500x455.jpg 500w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4459365125307_1463f5cdeaa65186f46374a1411d1395-885x806.jpg 885w"
-                sizes="(max-width: 1002px) 100vw, 1002px"></p>
-            <h3 style="text-align: center;"><strong>BẢNG HÀNG DỰ ÁN</strong></h3>
-            <p style="text-align: center;"><img decoding="async" loading="lazy"
-                class="alignnone size-large wp-image-2097"
-                src="https://batdongsantoancau.vn/wp-content/uploads/2023/03/z4459365604630_4414b42fa03cd390914ddc681846892d-1024x381.jpg"
-                alt="" width="1020" height="380"
-                srcset="https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4459365604630_4414b42fa03cd390914ddc681846892d-1024x381.jpg 1024w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4459365604630_4414b42fa03cd390914ddc681846892d-300x112.jpg 300w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4459365604630_4414b42fa03cd390914ddc681846892d-768x286.jpg 768w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4459365604630_4414b42fa03cd390914ddc681846892d-1536x571.jpg 1536w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4459365604630_4414b42fa03cd390914ddc681846892d-500x186.jpg 500w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4459365604630_4414b42fa03cd390914ddc681846892d-885x329.jpg 885w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4459365604630_4414b42fa03cd390914ddc681846892d.jpg 1651w"
-                sizes="(max-width: 1020px) 100vw, 1020px"><em>Bảng hàng dự án đang được cập nhật</em></p>
-            <h3 style="text-align: center;"><strong>TIẾN ĐỘ DỰ ÁN</strong></h3>
-            <p><img decoding="async" loading="lazy" class="alignnone wp-image-2100 size-full"
-                src="https://batdongsantoancau.vn/wp-content/uploads/2023/03/z4505847177877_60dcdc983742cd3a2195bbba22bf0b8b.jpg"
-                alt="" width="1280" height="960"
-                srcset="https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4505847177877_60dcdc983742cd3a2195bbba22bf0b8b.jpg 1280w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4505847177877_60dcdc983742cd3a2195bbba22bf0b8b-300x225.jpg 300w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4505847177877_60dcdc983742cd3a2195bbba22bf0b8b-1024x768.jpg 1024w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4505847177877_60dcdc983742cd3a2195bbba22bf0b8b-768x576.jpg 768w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4505847177877_60dcdc983742cd3a2195bbba22bf0b8b-500x375.jpg 500w, https://www.batdongsantoancau.vn/wp-content/uploads/2023/03/z4505847177877_60dcdc983742cd3a2195bbba22bf0b8b-885x664.jpg 885w"
-                sizes="(max-width: 1280px) 100vw, 1280px"></p>
-          </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p><span class="text-content"><strong>ICON40 HẠ LONG</strong> được định danh là tổ hợp căn hộ cao cấp bậc nhất
+            bên Vịnh di sản, một nơi an cư và ngôi nhà thứ hai đáp ứng nhu cầu: sống – nghỉ dưỡng và kinh doanh lý
+            tưởng. Đó chính là tận hưởng sự tiện nghi, hiện đại của 365 ngày nghỉ dưỡng tại gia, chạm vào nhịp sống
+            sôi động với các hoạt động vui chơi, giải trí đẳng cấp bên bờ Vịnh.</span></p>
+        <p><span class="text-content"><strong>Vị trí</strong>: Trục đường Hoàng Quốc Việt, ô đất H5-2, Lô đất
+            H5, Khu đô thị dịch vụ Hùng Thắng, Phường Hùng Thắng, Thành phố Hạ Long, Tỉnh Quảng Ninh.</span></p>
+        <p><em><span class="text-content">• Cách tổ hợp Marine Plaza 5 phút đi bộ</span></em></p>
+        <p><em><span class="text-content">• Cách Lotte Mart 1 phút đi bộ</span></em></p>
+        <p><em><span class="text-content">• Cách Bãi biển Manina Bay: 1km</span></em></p>
+        <p><em><span class="text-content">• Cách Rạp chiếu phim CGV: 1km</span></em></p>
+        <p><em><span class="text-content">• Cách Chợ đêm Hạ Long: 3km</span></em></p>
+        <p><em><span class="text-content">• Cách Bến xe Bãi Cháy: 4km</span></em></p>
+        <p><em><span class="text-content">• Cách Công viên Hạ Long: 5km</span></em></p>
+      </div>
+    </div>
+
+    <div class="row spaceText">
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Icon-40/vitri.jpg" alt="">
+      </div>
+      <em class="note-img">Vị trí dự án Icon 40</em>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3 style="text-align: center;"><strong>BIỂU TƯỢNG TRUNG TÂM MỚI HẠ LONG&nbsp;</strong></h3>
+        <p><span class="text-content">Đồng hành cùng sự phát triển “bứt tốc” của cửa ngõ phía Tây để trở thành
+            trung tâm mới của thành phố,<strong>&nbsp;ICON40</strong>&nbsp;sở hữu những thế mạnh nội tại hoàn hảo để
+            trở thành mảnh đất vàng đắt giá bậc nhất trong tương lai.</span></p>
+        <p><span class="text-content">Vươn mình đầy kiêu hãnh với tầm vóc tòa tháp cao nhất khu vực, một trạm
+            năng lượng tái tạo sức khỏe, tinh thần cho mỗi du khách hay chủ nhân các căn hộ – được xem như những
+            secondhome đẳng cấp thuộc tòa tháp 40&nbsp; tầng bên Vịnh kỳ quan này.</span></p>
+      </div>
+    </div>
+    <div class="row spaceText">
+      <div class="col-md-6 order-md-1">
+        <div class="tbl-duan">
+          <h3 style="text-align: center;"><strong>TỔNG QUAN</strong></h3>
+          <table width="291">
+            <tbody>
+              <tr>
+                <td width="147">Tên dự án:</td>
+                <td width="144">ICON 40</td>
+              </tr>
+              <tr>
+                <td>Vị trí:</td>
+                <td>Lô H5-2 Mặt đường Hoàng Quốc Việt - P. Hùng Thắng - TP. Hạ Long - Tỉnh Quảng Ninh</td>
+              </tr>
+              <tr>
+                <td>Chủ đầu tư:</td>
+                <td>BIM Group</td>
+              </tr>
+              <tr>
+                <td>Thi công:</td>
+                <td>Unicons</td>
+              </tr>
+              <tr>
+                <td>Tổng diện tích:</td>
+                <td>2.479 m2</td>
+              </tr>
+              <tr>
+                <td>Quy mô:</td>
+                <td>40 tầng</td>
+              </tr>
+              <tr>
+                <td>Tầng hầm:</td>
+                <td>2 Tầng</td>
+              </tr>
+              <tr>
+                <td>Tần 1 - 5:</td>
+                <td>Tầng thương mại, dịch vụ</td>
+              </tr>
+              <tr>
+                <td>Tầng 6 - 40:</td>
+                <td>Tầng Căn hộ</td>
+              </tr>
+              <tr>
+                <td>Tổng số căn:</td>
+                <td>804 căn</td>
+              </tr>
+              <tr>
+                <td>Loại hình căn hộ:</td>
+                <td>Studio, 1-2-3 Phòng ngủ, Duplex, Penthouse</td>
+              </tr>
+              <tr>
+                <td>Diện tích:</td>
+                <td>38 - 282m2</td>
+              </tr>
+              <tr>
+                <td>Bàn giao:</td>
+                <td>2024</td>
+              </tr>
+              <tr>
+                <td>Hình thức sở hữu:</td>
+                <td>Sổ hồng lâu dài</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </div>
+      <div class="col-md-6 order-md-2">
+        <div class="col-md-12 project-img">
+          <img class="project-img-bds" src="../../assets/image/Icon-40/viewfront.jpg" alt="">
+        </div>
+        <em class="note-img">Hình ảnh tháp Icon 40 mặt trước</em>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3 style="text-align: center;"><strong>QUẦN THỂ TIỆN ÍCH KIẾN TẠO CHẤT SỐNG SANG</strong></h3>
+        <p><span class="text-content">Được định hướng để trở thành nơi an cư của cộng đồng đẳng cấp với lối sống
+            vượt trội hoàn toàn mới, tại&nbsp;<strong>ICON40</strong>, hệ thống tiện ích nội khu được thiết kế vừa
+            lưu giữ nếp sống “người Hạ Long”, ” vừa được trải nghiệm phong cách sống sang với tổ ích tiện ích, dịch
+            vụ, giải trí “All-in-one”, ứng dụng công nghệ vào vận hành dự án…..</span></p>
+      </div>
+    </div>
+    <div class="row spaceText">
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Icon-40/quanthe.jpg" alt="">
+      </div>
+      <em class="note-img">Quần thể tiện ích</em>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3 style="text-align: center;"><strong>CẬN KỀ HỆ SINH THÁI GIẢI TRÍ MUA SẮM ĐA DẠNG</strong></h3>
+        <p><span class="text-content">Năng động và thời thượng, thiết lập chuẩn mực sống trên tầm cao theo những
+            tiêu chuẩn xa xỉ,&nbsp;<strong>ICON40</strong>&nbsp;vừa đủ xa để an nhiên sống hưởng trong không gian
+            sang trọng tựa những kỳ nghỉ dưỡng, vừa đủ gần để dễ dàng kết nối với những giá trị thượng đỉnh sánh tầm
+            quốc tế trong khu đô thị Hạ Long Marina với hệ sinh thái ẩm thực, giải trí, mua sắm, giáo dục… đẳng
+            cấp.</span></p>
+        <p><span class="text-content">Với thiết kế thông minh, mật độ thấp chủ đầu tư đã dành ra <em>20% không
+              gian</em> để làm tiện ích phục vụ cư dân</span></p>
+      </div>
+    </div>
+    <div class="row spaceText">
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Icon-40/home.jpg" alt="">
+      </div>
+      <em class="note-img">Hình ảnh tháp Icon 40 giữa trung tâm du lịch</em>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3 style="text-align: center;"><strong>KIÊU HÃNH KIẾN TRÚC BIỂU TƯỢNG GIỮA VỊNH BIỂN</strong></h3>
+        <p><span class="text-content"><strong>ICON40</strong>&nbsp;tạo nên tác phẩm nghệ thuật vượt thời gian
+            bởi lối kiến trúc mang cảm hứng thiên nhiên di sản hòa cùng nét chấm phá đương đại. Sự kết hợp đa dạng
+            các chất liệu tự nhiên: shape đá, vertical garden… đã làm nên dáng hình của “đỉnh tháp vàng” ICON40 –
+            dấu ấn tượng trưng cho kỳ vọng vươn cao, kiêu hãnh hướng về Vịnh biển. Đón trọn ánh nắng bình minh và
+            nguồn năng lượng mới, ICON40 trở thành tâm điểm phồn vinh cho dòng tiền đầu tư cùng trải nghiệm sống –
+            nghỉ dưỡng – làm việc tối ưu.</span></p>
+      </div>
+    </div>
+    <div class="row spaceText">
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Icon-40/viewbien.jpg" alt="">
+      </div>
+      <em class="note-img">Hình ảnh tháp Icon 40 nhìn ra phía biển</em>
+    </div>
+
+    <div class="row">
+      <h2 style="text-align: center;"><strong>MẶT BẰNG TẦNG ĐIỂN HÌNH</strong></h2>
+      <div class="col-md-5 order-md-2">
+        <p><strong><span class="text-content" style="color: #ffbd59;">Thiết kế căn hộ</span></strong></p>
+        <p><span class="text-content"> Căn hộ Icon 40 Hạ Long được đơn vị thiết kế quốc tế thực hiện với tiêu chuẩn
+            "xanh" làm kim chỉ nam sử dụng năng lượng xanh, sạch.
+            Khởi tạo một môi trường sống trong lành, tươi mới mang đến cảm nhận sống khác biệt dành cư dân.
+            Không những thế, mỗi căn hộ đều được thiết kế tỉ mỉ từ việc phân bổ diện tích cũng như công năng từng phòng
+            mang đến cho khách hàng căn hộ đạt tiêu chuẩn vàng vừa là nơi ở, vừa là nơi nghỉ dưỡng.</span></p>
+        <p><em><span class="text-content">• Căn studio: 16 căn</span></em></p>
+        <p><em><span class="text-content">• 1 ngủ + 1: 3 căn</span></em></p>
+        <p><em><span class="text-content">• 2 ngủ 2 wc: &nbsp;5 căn</span></em></p>
+        <p><em><span class="text-content">• 3 ngủ: 1 căn</span></em></p>
+      </div>
+      <div class="col-md-7 order-md-2">
+        <div class="carousel slide mb-6">
+          <div class="form-img">
+            <img [src]="'../../assets/image/Icon-40/' + imagesDesign[imagesDesignIndex]" alt="" class="img-bds"
+              style="height: 400px;" />
+          </div>
+          <button class="carousel-control-prev" type="button" (click)="changeImgDesign('prev')">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" (click)="changeImgDesign('next')">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row spaceText">
+      <p><strong><span class="text-content" style="color: #ffbd59;">Cấu trúc hạ tầng</span></strong></p>
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Icon-40/cautruc.png" alt="">
+      </div>
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Icon-40/thietke.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3 style="text-align: center;"><strong>CHÍNH SÁCH BÁN HÀNG 14 ĐỢT – <span style="color: #ed1c24;">CHIẾT
+              KHẤU LÊN ĐẾN 15%</span></strong></h3>
+      </div>
+    </div>
+    <div class="row spaceText">
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Icon-40/tiendotien.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3 style="text-align: center;"><strong>BẢNG HÀNG DỰ ÁN</strong></h3>
+      </div>
+    </div>
+    <div class="row spaceText">
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Icon-40/bangduan.jpg" alt="">
+      </div>
+      <em class="note-img">Bảng hàng dự án đang được cập nhật</em>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3 style="text-align: center;"><strong>TIẾN ĐỘ DỰ ÁN</strong></h3>
+      </div>
+    </div>
+    <div class="row spaceText">
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Icon-40/tiendoduan.jpg" alt="">
       </div>
     </div>
   </div>
