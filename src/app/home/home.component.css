@@ -138,7 +138,7 @@
 }
 
 .text-carousel {
-  top: 50%;
+  top: 60%;
   align-items: center;
   text-align: center !important;
 }
@@ -165,3 +165,110 @@
   background-color: #57749b;
 }
 
+
+/* slide img */
+.mySlides {
+  display: none;
+  padding: 8px;
+}
+
+.textsale {
+  text-align: center;
+  background-color: #222;
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: relative;
+  top: 0;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Six columns side by side */
+
+.thumbnail-img {
+  margin: 3px;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo-icon {
+  opacity: 0.6;
+}
+.demo-icon:hover {
+  opacity: 1;
+}
+
+.demo-dragon {
+  opacity: 0.6;
+}
+.demo-dragon:hover {
+  opacity: 1;
+}
+
+.demo-astro {
+  opacity: 0.6;
+}
+.demo-astro:hover {
+  opacity: 1;
+}
+
+.demo-holiday {
+  opacity: 0.6;
+}
+.demo-holiday:hover {
+  opacity: 1;
+}
+
+.demo-ruby {
+  opacity: 0.6;
+}
+.demo-ruby:hover {
+  opacity: 1;
+}
+
+.demo-sunGrand {
+  opacity: 0.6;
+}
+.demo-sunGrand:hover {
+  opacity: 1;
+}
+
+.active {
+  opacity: 1;
+}
+
+.hover-underline-animation {
+  /* display: inline-block; */
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  border-radius: 20px;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

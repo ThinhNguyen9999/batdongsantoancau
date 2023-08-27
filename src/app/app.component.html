@@ -1,11 +1,32 @@
 <app-nav></app-nav>
 <router-outlet></router-outlet>
-<div class="to-bottom-left">
+<!-- <div class="to-bottom-left">
   <div>
-    <a class="btn btn-sm zalo-text mb-3" href="https://zalo.me/0949658615" role="button">Chat Zalo</a>
+    <a class="btn btn-sm zalo-text mb-2" href="https://zalo.me/0949658615" role="button">Chat Zalo
+    </a>
   </div>
   <div>
-    <a class="btn btn-sm phone-text" role="button">0949658615</a>
+    <a class="btn btn-sm phone-text" href="tel:0949658615" role="button">0949658615</a>
+  </div>
+</div> -->
+<div class="to-bottom-left">
+  <div class="pulse-effect-zalo" (click)="sendZalo()">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div style="text-align: center;">
+      <a class="btn btn-sm zalo-text">Chat Zalo</a>
+    </div>
+  </div>
+  <div class="pulse-effect-phone mt-2" (click)="callPhone()">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div style="text-align: center;">
+      <a class="btn btn-sm phone-text">0949658615</a>
+    </div>
   </div>
 </div>
 <div class="to-top" (click)="scrollToTop()" [ngClass]="{ 'show-scrollTop': windowScrolled }">

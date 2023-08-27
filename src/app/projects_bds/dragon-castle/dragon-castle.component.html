@@ -1,18 +1,46 @@
 <div class="container mt-5">
   <div class="row spaceText">
     <div class="col-md-6 order-md-1">
-      <div class="carousel slide mb-6">
-        <div class="form-img">
-          <img [src]="'../../assets/image/Home/' + images[currentSlideIndex]" alt="" class="img-bds" />
+      <div class="carousel slide">
+        <div>
+          <div class="mySlides">
+              <img src="../../assets/image/Icon-40/view.jpg" style="width:100%; height: 400px">
+          </div>
+          <div class="mySlides">
+              <img src="../../assets/image/Icon-40/vitri.jpg" style="width:100%; height: 400px">
+          </div>
+          <div class="mySlides">
+              <img src="../../assets/image/Icon-40/quanthe.jpg" style="width:100%; height: 400px">
+          </div>
+          <div class="mySlides">
+              <img src="../../assets/image/Icon-40/cautruc.jpg" style="width:100%; height: 400px">
+          </div>
         </div>
-        <button class="carousel-control-prev" type="button" (click)="changeImg('prev')">
+        <!-- Next and previous buttons -->
+        <button class="carousel-control-prev" type="button" (click)="plusSlides(-1)">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" (click)="changeImg('next')">
+        <button class="carousel-control-next" type="button" (click)="plusSlides(1)">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
+      </div>
+
+      <!-- Thumbnail images -->
+      <div class="row thumbnail-img mt-3">
+        <div class="column">
+          <img class="demo cursor" src="../../assets/image/Icon-40/view.jpg" style="width:100%" (click)="currentSlide(1)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../../assets/image/Icon-40/vitri.jpg" style="width:100%" (click)="currentSlide(2)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../../assets/image/Icon-40/quanthe.jpg" style="width:100%" (click)="currentSlide(3)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../../assets/image/Icon-40/cautruc.jpg" style="width:100%" (click)="currentSlide(4)">
+        </div>
       </div>
     </div>
     <div class="col-md-6 order-md-2 mb-4 form-dang-ky">
@@ -56,11 +84,13 @@
             secondhome đẳng cấp thuộc tòa tháp 40&nbsp; tầng bên Vịnh kỳ quan này.</span></p>
       </div>
     </div>
-    <div class="row spaceText">
-      <div class="col-md-6 order-md-1">
+    <div class="row spaceText" style="align-items: center;">
+      <div class="col-md-1 order-md-1">
+      </div>
+      <div class="col-md-4 order-md-2">
         <div class="tbl-duan">
           <h3 style="text-align: center;"><strong>TỔNG QUAN</strong></h3>
-          <table width="291">
+          <table width="291" class="tbl-mota">
             <tbody>
               <tr>
                 <td width="147">Tên dự án:</td>
@@ -122,11 +152,13 @@
           </table>
         </div>
       </div>
-      <div class="col-md-6 order-md-2">
+      <div class="col-md-6 order-md-3" style="text-align: center;">
         <div class="col-md-12 project-img">
           <img class="project-img-bds" src="../../assets/image/Icon-40/viewfront.jpg" alt="">
         </div>
         <em class="note-img">Hình ảnh tháp Icon 40 mặt trước</em>
+      </div>
+      <div class="col-md-1 order-md-4">
       </div>
     </div>
 
@@ -218,7 +250,7 @@
     <div class="row spaceText">
       <p><strong><span class="text-content" style="color: #ffbd59;">Cấu trúc hạ tầng</span></strong></p>
       <div class="col-md-12 project-img">
-        <img class="project-img-bds" src="../../assets/image/Icon-40/cautruc.png" alt="">
+        <img class="project-img-bds" src="../../assets/image/Icon-40/cautruc.jpg" alt="">
       </div>
       <div class="col-md-12 project-img">
         <img class="project-img-bds" src="../../assets/image/Icon-40/thietke.jpg" alt="">

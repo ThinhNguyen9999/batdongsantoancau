@@ -69,8 +69,49 @@
 .tbl-duan {
   background-color: #ffffff;
   padding: 25px 25px 25px 25px;
-  margin-right: -90px;
-  margin-top: 68px;
-  position: sticky;
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px #ffbd59;
+}
+
+
+.tbl-mota {
+  width: 100%;
+  border: 1px solid rgba(0,0,0,.1)
+}
+
+.tbl-mota th,
+.tbl-mota td {
+  border: 1px solid rgba(0,0,0,.1);
+  padding: 5px;
+}
+
+/* Slide Img */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }

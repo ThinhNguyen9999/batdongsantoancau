@@ -18,4 +18,12 @@ export class AppComponent implements OnInit {
   scrollToTop() {
     window.scrollTo(0, 0);
   }
+
+  sendZalo() {
+    location.assign("https://zalo.me/0949658615");
+  }
+
+  callPhone() {
+    location.assign("tel:0949658615");
+  }
 }
