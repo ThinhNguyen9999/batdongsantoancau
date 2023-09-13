@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { Subject, filter, takeUntil } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -6,13 +8,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+
   title = 'batdongsan';
   windowScrolled = false;
+  private unsubscribe$ = new Subject();
+
+  constructor(private router: Router, private elementRef: ElementRef) {}
 
   ngOnInit() {
     window.addEventListener('scroll', () => {
       this.windowScrolled = window.pageYOffset !== 0;
     });
+
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd),
+      takeUntil(this.unsubscribe$)
+    ).subscribe(() => {
+      this.elementRef.nativeElement.ownerDocument.body.scrollTop = 0;
+    });
+
   }
 
   scrollToTop() {
@@ -26,4 +40,14 @@ export class AppComponent implements OnInit {
   callPhone() {
     location.assign("tel:0949658615");
   }
+
+  onActivate(event: any) {
+    window.scroll({
+      top: 0,
+      left: 0,
+      // behavior: 'smooth'
+    });
+  }
+
+
 }

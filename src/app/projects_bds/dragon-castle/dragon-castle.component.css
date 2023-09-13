@@ -115,3 +115,24 @@
 .demo:hover {
   opacity: 1;
 }
+
+.product-short-description {
+  padding: 10px;
+  background: #dff4ff;
+  color: #007cba;
+  border-radius: 10px;
+  display: block;
+  clear: both;
+}
+
+.emoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 0.07em !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
+}

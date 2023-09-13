@@ -15,11 +15,11 @@ export class ProjectIconComponent implements OnInit {
 
   ngOnInit() {
     document.title = "Dự án Icon 40 - BĐS toàn cầu";
-    this.showSlidesImgIcon(this.slideImgIndex);
+    this.showSlidesImgIcon(0);
   }
 
   ngAfterViewInit() {
-    this.showSlidesImgIcon(this.slideImgIndex);
+    this.showSlidesImgIcon(0);
   }
 
   changeImgDesign(res: string) {
@@ -46,7 +46,7 @@ export class ProjectIconComponent implements OnInit {
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("demo");
     if (n > slides.length) {this.slideImgIndex = 1}
-    if (n < 1) {this.slideImgIndex = slides.length}
+    if (n < 1) {this.slideImgIndex = 1}
     for (i = 0; i < slides.length; i++) {
       let test = slides[i] as HTMLElement;
       test.style.display = "none";
