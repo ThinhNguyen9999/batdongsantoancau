@@ -1,3 +1,377 @@
-<p>
-  holiday works!
-</p>
+<div class="container mt-5">
+  <div class="row spaceText">
+    <div class="col-md-6 order-md-1">
+      <div class="carousel slide">
+        <div>
+          <div class="slidesHoliday">
+              <img src="../../assets/image/HolidayHL/holiday1.jpg" style="width:100%; height: 400px">
+          </div>
+          <div class="slidesHoliday">
+              <img src="../../assets/image/HolidayHL/holiday2.jpg" style="width:100%; height: 400px">
+          </div>
+          <div class="slidesHoliday">
+              <img src="../../assets/image/HolidayHL/holiday5.jpg" style="width:100%; height: 400px">
+          </div>
+          <div class="slidesHoliday">
+              <img src="../../assets/image/HolidayHL/holiday13.jpg" style="width:100%; height: 400px">
+          </div>
+        </div>
+        <!-- Next and previous buttons -->
+        <button class="carousel-control-prev" type="button" (click)="plusSlides(-1)">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" (click)="plusSlides(1)">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Thumbnail images -->
+      <div class="row thumbnail-img mt-3">
+        <div class="column">
+          <img class="demo cursor" src="../../assets/image/HolidayHL/holiday1.jpg" style="width:100%" (click)="currentSlide(1)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../../assets/image/HolidayHL/holiday2.jpg" style="width:100%" (click)="currentSlide(2)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../../assets/image/HolidayHL/holiday5.jpg" style="width:100%" (click)="currentSlide(3)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../../assets/image/HolidayHL/holiday13.jpg" style="width:100%" (click)="currentSlide(4)">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 order-md-2 mb-4 form-dang-ky">
+      <h4 class="mb-3">The Holiday HẠ LONG</h4>
+      <div class="product-short-description">
+        <p><span class="text-content">
+          Chủ đầu tư Công ty Cổ phần Khách sạn Vịnh Hạ Long chính thức ra mắt dự án <strong>The Holiday Hạ Long</strong> – tổ hợp nghỉ dưỡng tiêu chuẩn quốc tế tại trung tâm du lịch Bãi Cháy,
+          Hạ Long với giá bán ưu đãi cùng nhiều chính sách bán hàng hấp dẫn.
+        </span></p>
+      </div>
+    </div>
+    <div class="col-md-2 order-md-3 mb-4 form-dang-ky">
+    </div>
+  </div>
+  <div class="product-footer">
+    <div class="row">
+      <div class="col-md-12">
+        <p><span class="text-content"><strong>The Holiday Hạ Long</strong> là dự án khách sạn, dịch vụ và căn hộ nghỉ dưỡng 5 sao tại TP. Hạ Long.
+          Với vị trí đắc địa, thiết kế ưu việt, cùng tiện ích đẳng cấp 5 sao quốc tế, hứa hẹn mang đến một không gian nghỉ dưỡng mới mẻ,
+          hiện đại bậc nhất và khả năng sinh lời hấp dẫn, thu hút khách hàng và giới đầu tư bất động sản khu vực phía bắc.
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="row spaceText">
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/HolidayHL/holiday1.jpg" alt="">
+      </div>
+      <em class="note-img">Phối cảnh dự án The Holiday Hạ Long Bãi Cháy</em>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <p><span class="text-content"><strong>The Holiday Hạ Long</strong> là dự án khách sạn, dịch vụ và căn hộ nghỉ dưỡng 5 sao tại TP. Hạ Long.
+          Với vị trí đắc địa, thiết kế ưu việt, cùng tiện ích đẳng cấp 5 sao quốc tế, hứa hẹn mang đến một không gian nghỉ dưỡng mới mẻ,
+          hiện đại bậc nhất và khả năng sinh lời hấp dẫn, thu hút khách hàng và giới đầu tư bất động sản khu vực phía bắc.
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="row spaceText">
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/HolidayHL/holiday1.jpg" alt="">
+      </div>
+      <em class="note-img">Phối cảnh dự án The Holiday Hạ Long Bãi Cháy</em>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3 style="text-align: center;"><strong>BIỂU TƯỢNG TRUNG TÂM MỚI HẠ LONG&nbsp;</strong></h3>
+        <p><span class="text-content">Đồng hành cùng sự phát triển “bứt tốc” của cửa ngõ phía Tây để trở thành
+            trung tâm mới của thành phố,<strong>&nbsp;ICON40</strong>&nbsp;sở hữu những thế mạnh nội tại hoàn hảo để
+            trở thành mảnh đất vàng đắt giá bậc nhất trong tương lai.</span></p>
+        <p><span class="text-content">Vươn mình đầy kiêu hãnh với tầm vóc tòa tháp cao nhất khu vực, một trạm
+            năng lượng tái tạo sức khỏe, tinh thần cho mỗi du khách hay chủ nhân các căn hộ – được xem như những
+            secondhome đẳng cấp thuộc tòa tháp 40&nbsp; tầng bên Vịnh kỳ quan này.</span></p>
+      </div>
+    </div>
+    <div class="row spaceText" style="align-items: center;">
+      <div class="col-md-1 order-md-1">
+      </div>
+      <div class="col-md-4 order-md-2">
+        <div class="tbl-duan">
+          <h3 style="text-align: center;"><strong>TỔNG QUAN</strong></h3>
+          <table width="291" class="tbl-mota">
+            <tbody>
+              <tr>
+                <td width="147">Tên dự án:</td>
+                <td width="144">ICON 40</td>
+              </tr>
+              <tr>
+                <td>Vị trí:</td>
+                <td>Lô H5-2 Mặt đường Hoàng Quốc Việt - P. Hùng Thắng - TP. Hạ Long - Tỉnh Quảng Ninh</td>
+              </tr>
+              <tr>
+                <td>Chủ đầu tư:</td>
+                <td>BIM Group</td>
+              </tr>
+              <tr>
+                <td>Thi công:</td>
+                <td>Unicons</td>
+              </tr>
+              <tr>
+                <td>Tổng diện tích:</td>
+                <td>2.479 m2</td>
+              </tr>
+              <tr>
+                <td>Quy mô:</td>
+                <td>40 tầng</td>
+              </tr>
+              <tr>
+                <td>Tầng hầm:</td>
+                <td>2 Tầng</td>
+              </tr>
+              <tr>
+                <td>Tần 1 - 5:</td>
+                <td>Tầng thương mại, dịch vụ</td>
+              </tr>
+              <tr>
+                <td>Tầng 6 - 40:</td>
+                <td>Tầng Căn hộ</td>
+              </tr>
+              <tr>
+                <td>Tổng số căn:</td>
+                <td>804 căn</td>
+              </tr>
+              <tr>
+                <td>Loại hình căn hộ:</td>
+                <td>Studio, 1-2-3 Phòng ngủ, Duplex, Penthouse</td>
+              </tr>
+              <tr>
+                <td>Diện tích:</td>
+                <td>38 - 282m2</td>
+              </tr>
+              <tr>
+                <td>Bàn giao:</td>
+                <td>2024</td>
+              </tr>
+              <tr>
+                <td>Hình thức sở hữu:</td>
+                <td>Sổ hồng lâu dài</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-md-6 order-md-3" style="text-align: center;">
+        <div class="col-md-12 project-img">
+          <img class="project-img-bds" src="../../assets/image/HolidayHL/viewfront.jpg" alt="">
+        </div>
+        <em class="note-img">Hình ảnh tháp Icon 40 mặt trước</em>
+      </div>
+      <div class="col-md-1 order-md-4">
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3 style="text-align: center;"><strong>VỊ TRÍ DỰ ÁN THE HOLIDAY HẠ LONG</strong></h3>
+        <p><span class="text-content"><strong>Dự án The Holiday Hạ Long</strong>nằm trên mặt đường Hạ Long, phường Bãi Cháy, thành phố Hạ Long, tỉnh Quảng Ninh,
+          tọa lạc tại phía Nam của vịnh Hạ Long, với vị trí trung tâm của khu vực du lịch Bãi Cháy.. Nằm đối diện một công viên Sungroup lớn đã đi vào hoạt động và được nhiều khách hàng trông đợi.</span></p>
+      </div>
+    </div>
+    <div class="row spaceText">
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/HolidayHL/holiday4.jpg" alt="">
+      </div>
+      <em class="note-img">Vị trí dự án The Holiday Hạ Long  – Bãy Cháy</em>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p><span class="text-content">Vị trí “tâm điểm vàng” mang đến cho dự án khả năng kết nối giao thông toàn diện.
+          The Holiday Ha Long có hai lối tiếp cận: Mặt trước tiếp cận từ đường Hạ Long và mặt sau tiếp cận từ đường Lý Quốc Sư.
+          Bên cạnh đó để di chuyển đến các khu vực vui chơi, giải trí, hành chính, bãi tắm tự nhiên công cộng,…cũng vô cùng dễ dàng.
+        </span></p>
+        <p><span class="text-content">Căn hộ nghỉ dưỡng The Holiday Hạ Long tọa lạc tại trung tâm phường Bãi Cháy.
+          Nơi hội tụ các yếu tố vàng, du khách có thể dễ dàng kết nối đến: hệ thống giao thông thuận tiện, khu vui chơi giải trí, khu trung tâm thương mại…
+        </span></p>
+      </div>
+    </div>
+    <div class="row spaceText">
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/HolidayHL/holiday5.jpg" alt="">
+      </div>
+      <em class="note-img">Liên kết vùng dự án The Holiday Bãi Cháy Hạ Long</em>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <p><em><span class="text-content">• Công viên SunWorl Hạ Long 1 phút đi xe.</span></em></p>
+        <p><em><span class="text-content">• Cảng tàu Quốc tế Hạ Long 2 phút đi xe.</span></em></p>
+        <p><em><span class="text-content">• Bài tắm Bãi Cháy: 1 phút đi xe.</span></em></p>
+        <p><em><span class="text-content">• Chợ Vườn Đào: 1 phút đi xe.</span></em></p>
+        <p><em><span class="text-content">• Cầu Bãi Cháy: 5 phút đi xe.</span></em></p>
+        <p><em><span class="text-content">• Bến xe Bãi Cháy 6 phút đi xe.</span></em></p>
+        <p><em><span class="text-content">• Vòng quay Mặt trời. 6 phút đi xe.</span></em></p>
+        <p><em><span class="text-content">• Cảng Cái Lân 7 phút đi xe.</span></em></p>
+        <p><em><span class="text-content">• Bệnh viện Vinmec 7 phút đi xe.</span></em></p>
+        <p><em><span class="text-content">• Bệnh viện Quảng Ninh: 8 phút đi xe.</span></em></p>
+        <p><em><span class="text-content">• Bảo tàng Quảng Ninh: 8 phút đi xe.</span></em></p>
+        <p><em><span class="text-content">• Núi Bài Thơ 7 phút đi xe.</span></em></p>
+        <p><em><span class="text-content">• Trung tâm hành chính Công TP Hạ Long 7 phút đi xe.</span></em></p>
+        <p><em><span class="text-content">• Trường cấp 1 và cấp 2 Bãi Cháy 5 phút đi xe.</span></em></p>
+        <p><em><span class="text-content">• UBND Phường Bãi Cháy: 5 phút đi xe.</span></em></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3 style="text-align: center;"><strong>TIỆN ÍCH DỰ ÁN THE HOLIDAY HẠ LONG</strong></h3>
+        <p><span class="text-content">Căn hộ nghỉ dưỡng The Holiday Hạ Long nằm ở trung tâm Bãi Cháy nên du khách có thể di chuyển thuận tiện cho việc mua sắm, dạo bộ, vui chơi.
+          Thiên đường vui chơi giải trí đa dạng và độc đáo: Đem đến những phút giây sôi nổi, những trải nghiệm kỳ thú gắn kết cả gia đình.
+          Việc chú trọng phục vụ cả những “thượng đế nhí” khiến tổ hợp dịch vụ của The Holiday Hạ Long được đánh giá là toàn diện và tiện nghi.
+        </span></p>
+      </div>
+    </div>
+
+    <div class="row spaceText">
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/HolidayHL/holiday6.jpg" alt="">
+      </div>
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/HolidayHL/holiday7.jpg" alt="">
+      </div>
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/HolidayHL/holiday8.jpg" alt="">
+      </div>
+      <em class="note-img">Bể bơi vô cực tại The Holiday Hạ Long</em>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <p><em><span class="text-content">• Nhà hàng Phượng Hoàng.</span></em></p>
+        <p><em><span class="text-content">• E-Casino.</span></em></p>
+        <p><em><span class="text-content">• Convenient Store.</span></em></p>
+        <p><em><span class="text-content">• Sảnh Bãi Cháy.</span></em></p>
+        <p><em><span class="text-content">• Phòng Pantry.</span></em></p>
+        <p><em><span class="text-content">• Coffee shop.</span></em></p>
+        <p><em><span class="text-content">• Phòng họp.</span></em></p>
+        <p><em><span class="text-content">• Bể bơi có mái che.</span></em></p>
+        <p><em><span class="text-content">• Bể bơi trẻ em.</span></em></p>
+        <p><em><span class="text-content">• Pool Bar.</span></em></p>
+        <p><em><span class="text-content">• Ghế tắm nắng.</span></em></p>
+        <p><em><span class="text-content">• Mái che đa năng.</span></em></p>
+        <p><em><span class="text-content">• Healthy Club (Gym).</span></em></p>
+        <p><em><span class="text-content">• Khu trị liệu sức khỏe.</span></em></p>
+        <p><em><span class="text-content">• Phòng tắm xông hơi.</span></em></p>
+        <p><em><span class="text-content">• Kid Club.</span></em></p>
+        <p><em><span class="text-content">• Spa.</span></em></p>
+      </div>
+      <div class="col-md-6">
+        <p><em><span class="text-content">• Phòng chờ hướng biển.</span></em></p>
+        <p><em><span class="text-content">• Sân tập Yoga.</span></em></p>
+        <p><em><span class="text-content">• Bar chân mây.</span></em></p>
+        <p><em><span class="text-content">• Bể bơi vô cực.</span></em></p>
+        <p><em><span class="text-content">• Golf Hub.</span></em></p>
+        <p><em><span class="text-content">• Khu tập chip.</span></em></p>
+        <p><em><span class="text-content">• Khu tập putt.</span></em></p>
+        <p><em><span class="text-content">• Cầu địa đàng.</span></em></p>
+        <p><em><span class="text-content">• Sân vườn vọng nguyệt.</span></em></p>
+        <p><em><span class="text-content">• Ghế tựa trăng non.</span></em></p>
+        <p><em><span class="text-content">• Đường dạo bộ.</span></em></p>
+        <p><em><span class="text-content">• Vườn treo đa tầng.</span></em></p>
+        <p><em><span class="text-content">• Bãi đỗ xe tự động.</span></em></p>
+        <p><em><span class="text-content">• Thủy cảnh.</span></em></p>
+        <p><em><span class="text-content">• Đài phun nước.</span></em></p>
+        <p><em><span class="text-content">• Tiểu cảnh rồng tọa nghinh hải.</span></em></p>
+        <p><em><span class="text-content">• Công viên ánh sáng.</span></em></p>
+      </div>
+    </div>
+
+    <div class="row spaceText">
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/HolidayHL/holiday10.jpg" alt="">
+      </div>
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/HolidayHL/holiday11.jpg" alt="">
+      </div>
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/HolidayHL/holiday12.jpg" alt="">
+      </div>
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/HolidayHL/holiday13.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="row">
+      <h2 style="text-align: center;"><strong>MẶT BẰNG DỰ ÁN THE HOLIDAY HẠ LONG</strong></h2>
+      <div class="col-md-5 order-md-2">
+        <p><span class="text-content"><strong>The Holiday Ha Long</strong></span></p>
+          đem đến loại hình sản phẩm: Holiday Homes Bất động sản phục vụ cho nhu cầu về du lịch,
+          nghỉ dưỡng Có thể đều đặn hàng tháng hoặc không thường xuyên của Chủ sở hữu và kết hợp với mục đích đầu tư khai thác sinh lời.
+      </div>
+      <div class="row spaceText">
+        <div class="col-md-12 project-img">
+          <img class="project-img-bds" src="../../assets/image/HolidayHL/matbang1.jpg" alt="">
+        </div>
+        <div class="col-md-12 project-img">
+          <img class="project-img-bds" src="../../assets/image/HolidayHL/matbang2.jpg" alt="">
+        </div>
+        <em class="note-img">Mặt bằng dự án The Holiday Hạ Long – Bãi Cháy tầng 21-35</em>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <p><span class="text-content"><strong>• The Holiday Ha Long</strong> tạo ra điểm nhấn kiến trúc cảnh quan khu vực,
+          đồng thời đảm bảo tính thống nhất và mối tương quan với các công trình lân cận.
+          Hầu hết căn hộ đều có tầm nhìn hướng biển, thu trọn đường chân trời và bình minh trên vịnh.</span></p>
+        </div>
+
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/HolidayHL/matbang2.jpg" alt="">
+      </div>
+
+      <div class="col-md-12">
+        <p><span class="text-content"><strong>• The Holiday Ha Long</strong> đem đến cho khách hàng 2 lựa chọn khai thác:
+          Holiday Premium – Khách hàng bàn giao cho đơn vị vận hành khai thác hoặc Holiday Homes – Khách hàng tự khai thác và sử dụng.
+        </span></p>
+
+        <p><span class="text-content"><strong>Holiday Premium</strong></span></p>
+        <div style="margin-left: 15px;">
+          <p><span class="text-content">• Loại hình khai thác: Bàn giao cho đơn vị vận hành, Uỷ thác cho thuê – Cross Hotel & Resort (Australia).</span></p>
+          <p><span class="text-content">• Tập trung ở các tầng thấp.</span></p>
+          <p><span class="text-content">• Gần 100% căn hộ hướng biển & thành phố.</span></p>
+          <p><span class="text-content">• Studio, 1PN, 1,5PN và 2 PN từ 33 m2.</span></p>
+          <p><span class="text-content">• Tiêu chuẩn bàn giao: Hoàn thiện nội thất & đồ rời theo tiêu chuẩn của đơn vị vận hành.</span></p>
+        </div>
+
+        <p><span class="text-content"><strong>Holiday Premium</strong></span></p>
+        <div style="margin-left: 15px;">
+          <p><span class="text-content">• Loại hình khai thác: Tự vận hành khai thác hoặc sử dụng theo nhu cầu.</span></p>
+          <p><span class="text-content">• Tập trung ở các tầng cao.</span></p>
+          <p><span class="text-content">• Gần 100% căn hộ hướng biển & thành phố.</span></p>
+          <p><span class="text-content">• Studio, 1PN và 2 PN từ 33 m2.</span></p>
+          <p><span class="text-content">• Đa dạng tiêu chuẩn bàn giao: Bàn giao cơ bản hoặc hoàn thiện nội thất.</span></p>
+        </div>
+
+        <p><span class="text-content">Diện tích căn hộ tại dự án The Holiday Hạ Long – Bãi Cháy</span></p>
+        <div style="margin-left: 15px;">
+          <p><span class="text-content">• Căn hộ Studio: Từ 33 m2 đến 50 m2.</span></p>
+          <p><span class="text-content">• Căn hộ 1 PN: Từ 42 m2 đến 44 m2.</span></p>
+          <p><span class="text-content">• Căn hộ 1,5PN: Từ 49 m2 đến 56 m2.</span></p>
+          <p><span class="text-content">• Căn hộ 2 PN: Từ 61 m2 đến 64 m2.</span></p>
+          <p><span class="text-content">• Căn hộ 2 PN: Từ 61 m2 đến 64 m2.</span></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -60,7 +60,7 @@ export class DragonCastleComponent implements OnInit {
 
   showSlidesImgDragonCastle(n: any) {
     let i;
-    var slides = document.getElementsByClassName("mySlides");
+    var slides = document.getElementsByClassName("slidesDragonCastle");
     var dots = document.getElementsByClassName("demo");
     if (n > slides.length) {this.slideImgIndex = 1}
     if (n < 1) {this.slideImgIndex = slides.length}
