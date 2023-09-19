@@ -41,6 +41,10 @@ export class AppComponent implements OnInit {
     location.assign("tel:0949658615");
   }
 
+  youTube() {
+    location.assign("https://www.youtube.com/@PhuongVy-BDSToanCau/videos");
+  }
+
   onActivate(event: any) {
     window.scroll({
       top: 0,

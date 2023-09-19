@@ -8,27 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class HolidayComponent implements OnInit {
 
   slideImgIndex: number = 1;
-
-  imagesDesign = ['1pk.jpg', '2view.jpg', '3view.jpg', '4view.jpg'];
   imagesDesignIndex = 0;
 
   ngOnInit() {
     document.title = "The Holiday Hạ Long - BĐS toàn cầu";
   }
 
-
   ngAfterViewInit() {
     this.showSlidesImgIcon(this.imagesDesignIndex);
-  }
-
-  changeImgDesign(res: string) {
-    if (res === 'prev')
-    {
-      this.imagesDesignIndex = (this.imagesDesignIndex - 1 + this.imagesDesign.length) % this.imagesDesign.length;
-    }
-    else if (res === 'next') {
-      this.imagesDesignIndex = (this.imagesDesignIndex + 1) % this.imagesDesign.length;
-    }
   }
 
   currentSlide(n: any) {

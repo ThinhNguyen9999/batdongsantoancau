@@ -24,8 +24,7 @@ export class HomeComponent implements OnInit {
   ngAfterViewInit() {
     setInterval(() => {
       this.showNextSlide();
-    }, 3000);
-
+    }, 5000);
     this.showSlidesImgIcon(this.slideImgIndex);
     this.showSlidesImgDragonCastle(this.slideImgIndex);
     this.showSlidesImgAstroHLB(this.slideImgIndex);
@@ -40,9 +39,6 @@ export class HomeComponent implements OnInit {
     for (let i = 0; i < divLogin.length; i++) {
       divLogin[i].classList.add('init');
     }
-  }
-  showPrevSlide() {
-    this.currentSlideIndex = (this.currentSlideIndex - 1 + this.images.length) % this.images.length;
   }
 
   // Thumbnail image controls
