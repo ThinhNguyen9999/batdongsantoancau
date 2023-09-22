@@ -14,8 +14,6 @@ export class ProjectIconComponent implements OnInit {
   imagesDesignIndex = 0;
 
   ngOnInit() {
-    document.title = "Dự án Icon 40 - BĐS toàn cầu";
-    //this.showSlidesImgIcon(0);
   }
 
   ngAfterViewInit() {

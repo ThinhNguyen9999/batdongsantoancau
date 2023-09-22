@@ -1,3 +1,277 @@
-<p>
-  ruby-city works!
-</p>
+<div class="container mt-5">
+  <div class="row spaceText">
+    <div class="col-md-7 order-md-1">
+      <div class="carousel slide">
+        <div>
+          <div class="slidesRuby">
+              <img src="../../assets/image/Ruby/home1.jpg" style="width:100%; height: 400px">
+          </div>
+          <div class="slidesRuby">
+              <img src="../../assets/image/Ruby/ruby2.jpg" style="width:100%; height: 400px">
+          </div>
+          <div class="slidesRuby">
+              <img src="../../assets/image/Ruby/ruby6.jpg" style="width:100%; height: 400px">
+          </div>
+          <div class="slidesRuby">
+              <img src="../../assets/image/Ruby/ruby11.jpg" style="width:100%; height: 400px">
+          </div>
+        </div>
+        <!-- Next and previous buttons -->
+        <button class="carousel-control-prev" type="button" (click)="plusSlides(-1)">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" (click)="plusSlides(1)">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Thumbnail images -->
+      <div class="row thumbnail-img mt-3">
+        <div class="column">
+          <img class="demo cursor" src="../../assets/image/Ruby/home1.jpg" style="width:100%" (click)="currentSlide(1)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../../assets/image/Ruby/ruby2.jpg" style="width:100%" (click)="currentSlide(2)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../../assets/image/Ruby/ruby6.jpg" style="width:100%" (click)="currentSlide(3)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../../assets/image/Ruby/ruby11.jpg" style="width:100%" (click)="currentSlide(4)">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5 order-md-2 mb-4 form-dang-ky">
+      <h4 class="mb-3">Ruby City Hạ Long</h4>
+      <div class="product-short-description">
+        <p><span class="text-content">
+          Dự án Ruby City Hạ Long chuẩn bị ra mắt 52 lô shophouse cuối cùng của dự án.
+          Sở hữu vị trí nằm trên nút giao ngã 5 kết nối Cầu Cửa Lục 3 – Hoành Bồ – Hà Khánh – Hồng Hải – Hà Tu
+          hứa hẹn trong thời gian tới sẽ là trung tâm kết nối mới của Hạ Long.
+        </span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-footer">
+    <div class="row spaceText">
+      <h3 style="text-align: center;"><strong>TỔNG QUAN DỰ ÁN THE HOLIDAY HẠ LONG</strong></h3>
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Ruby/ruby1.jpg" alt="">
+      </div>
+      <em class="note-img">Phối cảnh Ruby City Hạ Long – Quảng Ninh</em>
+    </div>
+
+    <div class="row spaceText" style="align-items: center;">
+      <div class="col-md-12">
+        <p><span class="text-content">• <strong>Tên dự án: Hạ Long Star.</strong></span></p>
+        <p><span class="text-content">• <strong>Vị trí dự án:</strong> Phường Hà Khánh (Bắc Hạ Long, Nam Hoành Bồ).</span></p>
+        <p><span class="text-content">• <strong>Chủ đầu tư:</strong> Công ty cổ phần đầu tư xây dựng thương mại Tân Thành.</span></p>
+        <p><span class="text-content">• <strong>Tổng diện tích:</strong> 9,8ha.</span></p>
+        <p><span class="text-content">• <strong>Mật độ xây dựng:</strong> 26,5%.</span></p>
+        <p><span class="text-content">• <strong>Diện tích cây xanh, giao thông:</strong> 62%.</span></p>
+        <p><span class="text-content">• <strong>Loại hình sản phẩm:</strong> Shophouse, đất nền.</span></p>
+        <p><span class="text-content">• <strong>Số lượng sản phẩm:</strong> 268 lô.</span></p>
+        <p><span class="text-content">• <strong>Diện tích lô đất:</strong> 58,5m2 – 75m2 – 93m2 – 99m2 – 120m2 – 165m2.</span></p>
+        <p><span class="text-content">• <strong>Chung cư:</strong> 2 tòa 5 tầng, 68 căn hộ.</span></p>
+        <p><span class="text-content">• <strong>Tiện ích:</strong> Nhà sinh hoạt cộng đồng, trường mầm non, công viên cây xanh, vườn treo, đường dạo bộ,…</span></p>
+        <p><span class="text-content">• <strong>Các tuyến đường:</strong> 17,5m – 19m – 20,5m – 52,5m.</span></p>
+        <p><span class="text-content">• <strong>Hình thức sở hữu:</strong> Sổ hồng lâu dài.</span></p>
+      </div>
+    </div>
+
+    <div class="row spaceText">
+      <h5 style="text-align: center;"><strong>TIỀM NĂNG PHÁT TRIỂN HẠ LONG</strong></h5>
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Ruby/ruby2.jpg" alt="">
+      </div>
+      <em class="note-img">Quy hoạch thành phố Hạ Long – Quảng Ninh đến 2050</em>
+
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Ruby/ruby3.jpg" alt="">
+      </div>
+      <em class="note-img">Tiềm năng phát triển bất động sản Hạ Long – Quảng Ninh</em>
+
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Ruby/ruby4.jpg" alt="">
+      </div>
+      <em class="note-img">Tiềm năng 2 phát triển bất động sản Hạ Long – Quảng Ninh</em>
+
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Ruby/ruby5.jpg" alt="">
+      </div>
+      <em class="note-img">Tiềm năng 3 phát triển bất động sản Hạ Long – Quảng Ninh</em>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3 style="text-align: center;"><strong>VỊ TRÍ DỰ ÁN RUBY CITY HẠ LONG</strong></h3>
+        <p><span class="text-content"><strong>Dự án Ruby City</strong> sở hữu vị trí cực kỳ thuận lợi cho giao thông
+          và thương mại khi tọa lạc ngay trung tâm phát triển được TP. Hạ Long chú trọng quy hoạch đầu tư – Vùng đất “trời ban” phía Bắc Hạ Long, Nam Hoành Bồ.
+          Theo nhiều chuyên gia trong ngành nhận định, Khu vực phía Bắc TP Hạ Long đang nổi lên như một điểm sáng trong sự phát triển
+          cả về du lịch và Bất động sản thành phố khi mà các chủ đầu tư lớn đã xin quỹ đất lập dự án tại đây, điển hình như Vingroup,
+          Sungroup, FLC… Và <strong>Ruby City</strong> “hưởng lợi” vượt bậc từ ưu thế vị trí cũng nhờ đây.
+        </span></p>
+      </div>
+    </div>
+    <div class="row spaceText">
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Ruby/ruby6.jpg" alt="">
+      </div>
+      <em class="note-img">Vị trí Ruby City Hạ Long – Quảng Ninh</em>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <p><span class="text-content">Một trong những điều làm nên sự hấp dẫn của dự án, đó chính là đây là quỹ đất cuối cùng tại
+          Phường Hà Khánh với đầy đủ tính chất pháp lý, <strong>Ruby City Hà Khánh – Hạ Long</strong> hứa hẹn sẽ là khu đô thị ven biển thượng lưu,
+          có tiềm năng phát triển không thể lường trước. <strong>Ruby City Hạ Long</strong> nằm ngay trung tâm với liên kết vùng chiến lược,
+          kết nối dễ dàng đến các địa điểm du lịch – dịch vụ nổi tiếng của thành phố Hạ Long
+        </span></p>
+        <div style="margin-left: 30px;">
+          <p><span class="text-content">• <strong>Phía Đông giáp:</strong> Vườn treo dự án.</span></p>
+          <p><span class="text-content">• <strong>Phía Tây giáp:</strong> Dự án FLC Tropical Hạ Long.</span></p>
+          <p><span class="text-content">• <strong>Phía Nam giáp:</strong> Khu dân cư hiện hữu.</span></p>
+          <p><span class="text-content">• <strong>Phía Bắc giáp:</strong> Khu dân cư hiện hữu.</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="row spaceText">
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Ruby/ruby7.jpg" alt="">
+      </div>
+      <em class="note-img">Kết nối Ruby City Hạ Long – Quảng Ninh</em>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3 style="text-align: center;"><strong>QUY HOẠCH VÀ TIỆN ÍCH DỰ ÁN RUBY CITY HẠ LONG</strong></h3>
+        <p><span class="text-content">Với tổng diện tích: 98.095,4m2, <strong>Ruby City Hạ Long</strong> có tất cả 268 lô đất bao gồm nhiều hạng mục,
+          trong đó có hơn 50 lô sẽ bàn giao xây dựng thô, kèm với đó là 2 khối tòa chung cư và các tiện ích đầy đủ phục vụ cho cư dân như:
+          phố đi bộ, khu công viên, khu vui chơi giải trí, club house,… với mục đích tạo một không gian sống thoải mái,
+          một môi trường an cư lạc nghiệp hoàn hảo cho mọi cư dân sinh sống tại đây.
+        </span></p>
+      </div>
+
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Ruby/ruby8.jpg" alt="">
+      </div>
+      <em class="note-img">Nhà trẻ công viên Ruby City Hạ Long – Quảng Ninh</em>
+
+      <div class="col-md-12">
+        <p><span class="text-content">Với sứ mệnh được đặt ra ngay từ đầu là chú trọng xây dựng hướng tới một cuộc sống văn minh,
+          hiện đại và mang đến cho khách hàng chất lượng cuộc sống có tiêu chuẩn cao cấp, với những tiện ích để mang lại một “lối sống đỉnh cao”
+          thì <strong>Ruby City Hạ Long</strong> mới có đầy đủ tiện nghi nội – ngoại khu được đồng bộ một cách hoàn hảo, giúp bạn tận hưởng cuộc sống đẳng cấp ngay trong chính không gian sống của mình.
+        </span></p>
+      </div>
+
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Ruby/ruby9.jpg" alt="">
+      </div>
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Ruby/ruby10.jpg" alt="">
+      </div>
+      <em class="note-img">Tiện ích Ruby City Hạ Long – Quảng Ninh</em>
+
+      <div class="col-md-12">
+        <p><span class="text-content">Với sứ mệnh được đặt ra ngay từ đầu là chú trọng xây dựng hướng tới một cuộc sống văn minh,
+          hiện đại và mang đến cho khách hàng chất lượng cuộc sống có tiêu chuẩn cao cấp, với những tiện ích để mang lại một “lối sống đỉnh cao”
+          thì <strong>Ruby City Hạ Long</strong> mới có đầy đủ tiện nghi nội – ngoại khu được đồng bộ một cách hoàn hảo, giúp bạn tận hưởng cuộc sống đẳng cấp ngay trong chính không gian sống của mình.
+        </span></p>
+      </div>
+
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Ruby/ruby11.jpg" alt="">
+      </div>
+      <em class="note-img">TTTM Ruby City Hạ Long – Quảng Ninh</em>
+
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Ruby/ruby12.jpg" alt="">
+      </div>
+      <em class="note-img">Trường học Ruby City Hạ Long – Quảng Ninh</em>
+
+      <div class="col-md-12">
+        <p><span class="text-content">Với tất cả những tiện ích đó, <strong>Ruby City Hạ Long</strong> mới chính là một thành phố thu nhỏ,
+          mang đến cho cư dân nơi đây những trải nghiệm trọn vẹn nhất về một cuộc sống đầy đủ và mang lại giá trị đỉnh cao.
+        </span></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <h3 style="text-align: center;"><strong>SẢN PHẨM DỰ ÁN RUBY CITY HẠ LONG</strong></h3>
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Ruby/ruby13.jpg" alt="">
+      </div>
+      <em class="note-img">Mặt bằng phân lô Ruby City Hạ Long – Quảng Ninh</em>
+
+      <div class="col-md-12">
+        <p><span class="text-content">Dòng sản phẩm shophouse đẳng cấp 100% tọa lạc trên mặt đường chính Trần Phú
+          là niềm tự hào và góp phần đưa dự án <strong>Ruby City Hạ Long</strong> nổi lên như một biểu tượng sống điển hình thu nhỏ ngay tại trung tâm Hạ Long.
+        </span></p>
+      </div>
+
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Ruby/ruby14.jpg" alt="">
+      </div>
+      <em class="note-img">Shophouse Ruby City Hạ Long – Quảng Ninh</em>
+
+      <div class="col-md-12">
+        <p><span class="text-content"><strong>Shophouse Ruby City Hạ Long</strong> phục vụ mục đích vừa để ở vừa kinh doanh.
+          Các căn nhà phố có vị trí tọa lạc tại trung tâm dự án, với hai mặt tiền rộng thoáng và sạch sẽ giúp nhà đầu tư tiếp cận tối đa khách hàng.
+          Với công năng vừa ở vừa kinh doanh, <strong>nhà phố thương mại Shophouse Ruby City Hà Khánh</strong> được bố trí xung quanh mặt ngoài khu đô thị,
+          là sản phẩm ấn tượng, phù hợp cho cả hoạt động kinh doanh và nghỉ ngơi thư giãn cho cư dân.
+        </span></p>
+      </div>
+
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Ruby/ruby15.jpg" alt="">
+      </div>
+      <em class="note-img">Shophouse Ruby City Hạ Long – Quảng Ninh</em>
+
+      <div class="col-md-12">
+        <p><span class="text-content"><strong>Liền kề Ruby City Hạ Long</strong> là một trong những sản phẩm hot nhất hiện nay, diện tích từ 56 – 257 m2.
+          <strong>Liền kề Ruby City Hạ Long</strong> có giá bán hấp dẫn, phù hợp với nhiều khách hàng. Vẻ đẹp vừa tân cổ, vừa sang trọng là
+          phong cách được hướng đến cho mỗi căn liền kề. Tại mỗi căn hộ liền kề có sự kết hợp những khoảng màu sáng tối hài hòa đem lại không gian rộng mở và thoáng đãng.
+        </span></p>
+        <p><span class="text-content">Với chiều cao 5,5 tầng và thiết kế mỗi tầng cũng mang những dấu ấn riêng biệt, được bày trí đa dạng, sang trọng và đúng chất thời đại mới.</span></p>
+      </div>
+
+      <div class="col-md-12 project-img">
+        <img class="project-img-bds" src="../../assets/image/Ruby/ruby16.jpg" alt="">
+      </div>
+      <em class="note-img">Phối cảnh vườn treo Babylons Ruby City Hạ Long – Quảng Ninh</em>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3 style="text-align: center;"><strong>GIÁ BÁN VÀ TIẾN ĐỘ THANH TOÁN RUBY CITY HÀ KHÁNH</strong></h3>
+        <p><span class="text-content">Hiện tại đã có mức giá sàn và giá trần của <strong>Dự án Ruby City Hà Khánh</strong>,
+          chi tiết giá từng lô quý khách hàng vui lòng liên hệ Hotline: 0949 658 615 để được tư vấn cụ thể, chuyên sâu.
+        </span></p>
+        <p><span class="text-content"><strong>Tiến độ thanh toán Ruby City Hạ Long</strong>chia làm 6 đợt linh hoạt:</span></p>
+        <div class="ml-2">
+          <p><span class="text-content">• <strong>Đợt 1:</strong> Đặt chỗ 100.000.000 VND.</span></p>
+          <p><span class="text-content">• <strong>Đợt 2:</strong> 20% GTHĐ + 100% GT suất mua 5 ngày kể từ ngày đặt chỗ. Ký HĐ đặt mua.</span></p>
+          <p><span class="text-content">• <strong>Đợt 3:</strong> Ký HĐ chuyển nhượng.</span></p>
+          <p><span class="text-content">• <strong>Đợt 4:</strong> 30% GTHĐ 30 ngày kể từ ngày ký HĐCN.</span></p>
+          <p><span class="text-content">• <strong>Đợt 5:</strong> 45% GTHĐ 60 ngày kể từ ngày ký HĐCN. Ký HĐ công chứng chuyển nhượng.</span></p>
+          <p><span class="text-content">• <strong>Đợt 6:</strong> 5% GTHĐ Thông báo bàn giao GCN.</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3 style="text-align: center;"><strong>PHÁP LÝ ĐẢM BẢO RUBY CITY HẠ LONG</strong></h3>
+        <p><span class="text-content">Trong bối cảnh quỹ đất nền khan hiếm cộng hưởng cùng những biến động của thị trường bất động sản,
+          <strong>Ruby City Hạ Long</strong> sẽ là lựa chọn lý tưởng cho bạn khi đó là quỹ đất cuối cùng được quy hoạch của thành phố biển Hạ Long,
+          vì dự án này mà hai tập đoàn lớn là Sun Group và FLC đã phải “vạt đồi lấp biển” để triển khai một cách quyết liệt. Lẽ dĩ nhiên,
+          để “trình làng” dự án một cách hoàn hảo nhất, tính pháp lý là một trong những điều kiện tiên quyết để tạo niềm tin cậy vững chắc cho quý khách hàng,
+          dù là để ở hay để đầu tư, khách hàng cũng sẽ được đảm bảo được bàn giao đất và đóng thuế đầy đủ, và chủ đầu tư cam kết sẽ ra sổ hồng cho quý khách chỉ trong vòng 6 tháng
+        </span></p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -21,8 +21,6 @@ export class DragonCastleComponent implements OnInit {
 
 
   ngOnInit() {
-    document.title = "Dragon Castle - BĐS toàn cầu";
-    this.showSlidesImgDragonCastle(this.slideImgIndex);
   }
 
   ngAfterViewInit() {

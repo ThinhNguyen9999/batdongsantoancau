@@ -1,3 +1,102 @@
-<p>
-  sun-grand works!
-</p>
+<div class="container mt-5">
+  <div class="row spaceText">
+    <div class="col-md-7 order-md-1">
+      <div class="carousel slide">
+        <div>
+          <div class="slidesSunGrand">
+              <img src="../../assets/image/SunGrand/home1.jpg" style="width:100%; height: 400px">
+          </div>
+          <div class="slidesSunGrand">
+              <img src="../../assets/image/SunGrand/home2.jpg" style="width:100%; height: 400px">
+          </div>
+          <div class="slidesSunGrand">
+              <img src="../../assets/image/SunGrand/home3.jpg" style="width:100%; height: 400px">
+          </div>
+          <div class="slidesSunGrand">
+              <img src="../../assets/image/SunGrand/home4.jpg" style="width:100%; height: 400px">
+          </div>
+        </div>
+        <!-- Next and previous buttons -->
+        <button class="carousel-control-prev" type="button" (click)="plusSlides(-1)">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" (click)="plusSlides(1)">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Thumbnail images -->
+      <div class="row thumbnail-img mt-3">
+        <div class="column">
+          <img class="demo cursor" src="../../assets/image/SunGrand/home1.jpg" style="width:100%" (click)="currentSlide(1)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../../assets/image/SunGrand/home2.jpg" style="width:100%" (click)="currentSlide(2)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../../assets/image/SunGrand/home3.jpg" style="width:100%" (click)="currentSlide(3)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../../assets/image/SunGrand/home4.jpg" style="width:100%" (click)="currentSlide(4)">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5 order-md-2 mb-4 form-dang-ky">
+      <h4 class="mb-3">SunGrand City Hạ Long</h4>
+      <div class="product-short-description">
+        <p><span class="text-content">Sun Grand City Feria là dòng sản phẩm biệt thự ở mang phong cách nghỉ dưỡng đầu tiên được
+          quy hoạch đồng bộ tại Bãi Cháy bởi tập đoàn Sun Group.
+        </span></p>
+        <p><span class="text-content">Những căn biệt thự ở tại Sun Grand City Feria như những thanh âm ngân vang
+          trong bản hòa tấu giữa thiên đường du lịch Bãi Cháy, dành riêng cho cộng đồng cư dân tinh hoa, một chốn an yên bên bờ vịnh tuyệt mỹ.
+        </span></p>
+        <p><span class="text-content">Khẽ chạm để trải nghiệm phong vị sống khác biệt chưa từng có nơi “nàng thơ phố Vịnh”.
+        </span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-footer">
+    <div class="row spaceText">
+      <h3 style="text-align: center;"><strong>TỔNG QUAN DỰ ÁN THE HOLIDAY HẠ LONG</strong></h3>
+    </div>
+
+    <div class="row spaceText" style="align-items: center;">
+      <div class="col-md-12">
+        <p><span class="text-content">• <strong>Tên dự án: Sun Grand City Feria Hạ Long.</strong></span></p>
+        <p><span class="text-content">• <strong>Vị trí dự án:</strong> Phường Hòn Gai thuộc Vịnh Bái Tử Long, thành phố Hạ Long, tỉnh Quảng Ninh.</span></p>
+        <p><span class="text-content">• <strong>Chủ đầu tư:</strong> Tập đoàn Sun Group.</span></p>
+        <p><span class="text-content">• <strong>Đơn vị thiết kế:</strong> Dark Horse Architect (Úc).</span></p>
+        <p><span class="text-content">• <strong>Đơn vị quản lý:</strong> Melia.</span></p>
+        <p><span class="text-content">• <strong>Quy mô phân khu Feria:</strong> 20ha.</span></p>
+        <p><span class="text-content">• <strong>Mật độ xây dựng:</strong> 38-60%.</span></p>
+        <p><span class="text-content">• <strong>Tổng diện tích:</strong> 122 – 655m2.</span></p>
+        <p><span class="text-content">• <strong>Số lượng:</strong> 479 căn biệt thự.</span></p>
+        <p><span class="text-content">• <strong>Loại hình sản phẩm:</strong> Song lập, Đơn lập & Tứ lập.</span></p>
+        <p><span class="text-content">• <strong>Xây dựng:</strong> 3.5 tầng (3 tầng & 1 tum).</span></p>
+        <p><span class="text-content">• <strong>Hình thức sở hữu:</strong> Sở hữu lâu dài.</span></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3 style="text-align: center;"><strong>VỊ TRÍ DỰ ÁN SunGrand CITY HẠ LONG</strong></h3>
+        <p><span class="text-content"><strong>Biệt thự Sun Grand City Feria Bãi Cháy sở hữu một vị trí đắc địa ngay trung tâm nhất của thành phố du lịch Hạ Long</strong>
+        </span></p>
+        <div style="margin-left: 30px;">
+          <p><span class="text-content">• Nhất cận thị (bất động sản nằm giữa trung tâm du lịch Bãi Cháy).</span></p>
+          <p><span class="text-content">• Nhị cận giang (view trọn Vịnh Hạ Long).</span></p>
+          <p><span class="text-content">• Tam cận lộ (với đường bao biển rộng 21m, dài 4,2km).</span></p>
+          <p><span class="text-content">• Trong bán kính chưa tới 1 km quý cư dân tại Sun Grand City Feria Hạ Long có thể dễ dàng tiếp cận– Biển Bãi Cháy, Sun World Hạ Long: 2 phút.</span></p>
+          <div style="margin-left: 30px;">
+            <p><span class="text-content">- Cảng tàu siêu du thuyền, Vịnh Hạ Long: 5 phút.</span></p>
+            <p><span class="text-content">- Khu nghỉ dưỡng Sun Premier Village Hạ Long, khu shophouse phố cổ: 10 phút.</span></p>
+            <p><span class="text-content">- Trong bán kính chưa tới 1 km quý cư dân tại Sun Grand City Feria Hạ Long có thể dễ dàng tiếp cận– Biển Bãi Cháy, Sun World Hạ Long: 2 phút.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -38,7 +38,6 @@ export class IntroduceComponent implements OnInit{
     ) {
   }
   ngOnInit() {
-    document.title = "Giới thiệu - BĐS toàn cầu";
   }
 
   register() {

@@ -11,7 +11,6 @@ export class HolidayComponent implements OnInit {
   imagesDesignIndex = 0;
 
   ngOnInit() {
-    document.title = "The Holiday Hạ Long - BĐS toàn cầu";
   }
 
   ngAfterViewInit() {

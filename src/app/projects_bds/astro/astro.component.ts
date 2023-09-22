@@ -11,7 +11,6 @@ export class AstroComponent implements OnInit {
   imagesDesignIndex = 0;
 
   ngOnInit() {
-    document.title = "The Astro HaLong Bay - BĐS toàn cầu";
   }
 
 

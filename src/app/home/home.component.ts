@@ -18,7 +18,6 @@ export class HomeComponent implements OnInit {
   slideImgIndex: number = 1;
 
   ngOnInit() {
-    document.title = "Trang chủ - BĐS toàn cầu";
   }
 
   ngAfterViewInit() {

@@ -14,27 +14,24 @@ import { RubyCityComponent } from './projects_bds/ruby-city/ruby-city.component'
 import { SunGrandComponent } from './projects_bds/sun-grand/sun-grand.component';
 
 const routes: Routes = [
-  {path: 'trang-chu', component: HomeComponent,},
-  {path: 'gioi-thieu', component: IntroduceComponent},
-  {path: 'tin-tuc', component: NewsComponent},
-  {path: 'lien-he', component: ContactComponent},
-  {path: 'ban-va-cho-thue', component: SaleAndRentalComponent},
+  { path: 'trang-chu', component: HomeComponent, title: "Trang chủ - BĐS toàn cầu" },
+  { path: 'gioi-thieu', component: IntroduceComponent, title: "Giới thiệu- BĐS toàn cầu" },
+  { path: 'tin-tuc', component: NewsComponent, title: "Tin tức - BĐS toàn cầu" },
+  { path: 'lien-he', component: ContactComponent, title: "Liên hệ - BĐS toàn cầu" },
+  { path: 'ban-va-cho-thue', component: SaleAndRentalComponent, title: "Bán và cho thuê - BĐS toàn cầu" },
 
-  {path: 'du-an', component: DistributionProjectComponent},
-  {path: 'du-an/icon-40', component: ProjectIconComponent},
-  {path: 'du-an/dragon-castle', component: DragonCastleComponent},
-  {path: 'du-an/the-astro-halong-bay', component: AstroComponent},
-  {path: 'du-an/the-holiday-halong', component: HolidayComponent},
-  {path: 'du-an/ruby-city-ha-long', component: RubyCityComponent},
-  {path: 'du-an/sun-grand-ha-long', component: SunGrandComponent},
-  {path: 'du-an/ha-long-star', component: DragonCastleComponent},
-  {path: '', redirectTo: '/trang-chu', pathMatch: 'full'}
+  { path: 'du-an', component: DistributionProjectComponent, title: "Dự án phan phối - BĐS toàn cầu" },
+  { path: 'du-an/icon-40', component: ProjectIconComponent, title: "Dự án Icon 40 - BĐS toàn cầu" },
+  { path: 'du-an/dragon-castle', component: DragonCastleComponent, title: "Dragon Castle - BĐS toàn cầu" },
+  { path: 'du-an/the-astro-halong-bay', component: AstroComponent, title: "The Astro HaLong Bay - BĐS toàn cầu" },
+  { path: 'du-an/the-holiday-halong', component: HolidayComponent, title: "The Holiday Hạ Long - BĐS toàn cầu" },
+  { path: 'du-an/ruby-city-ha-long', component: RubyCityComponent, title: "Ruby City Hạ Long - BĐS toàn cầu" },
+  { path: 'du-an/sun-grand-ha-long', component: SunGrandComponent, title: "Sun Grand City Feria Hạ Long - BĐS toàn cầu" },
+  { path: '', redirectTo: '/trang-chu', pathMatch: 'full' },
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes),
-  ],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

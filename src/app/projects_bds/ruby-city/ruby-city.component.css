@@ -1,0 +1,111 @@
+
+.project-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: none;
+  height: 100%;
+  width: 100%;
+}
+
+.project-img-bds {
+  width: 100%;
+  height: 700px;
+  animation: moveRight 3s ease-in-out;
+}
+
+.project-img-bds-hight {
+  width: 100%;
+  height: 1300px;
+  animation: moveRight 3s ease-in-out;
+}
+
+.note-img {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.text-content {
+  font-size: 110%;
+}
+
+.spaceText {
+  margin-bottom: 20px;
+}
+
+.form-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: none;
+  height: 100%;
+  width: 100%;
+}
+
+.img-bds {
+  width: 100%;
+  height: 500px;
+  animation: moveRight 3s ease-in-out;
+}
+
+.tbl-duan {
+  background-color: #ffffff;
+  padding: 25px 25px 25px 25px;
+  box-shadow: 0 0 10px #3a3890;
+}
+
+
+.tbl-mota {
+  width: 100%;
+  border: 1px solid rgba(0,0,0,.1)
+}
+
+.tbl-mota th,
+.tbl-mota td {
+  border: 1px solid rgba(0,0,0,.1);
+  padding: 5px;
+}
+
+/* Slide Img */
+.slidesRuby {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+.product-short-description {
+  padding: 10px;
+  background: #dff4ff;
+  color: #007cba;
+  border-radius: 10px;
+  display: block;
+  clear: both;
+}
