@@ -1,15 +1,24 @@
 <app-nav></app-nav>
 <router-outlet (activate)="onActivate($event)"></router-outlet>
-<!-- <div class="to-bottom-left">
-  <div>
-    <a class="btn btn-sm zalo-text mb-2" href="https://zalo.me/0949658615" role="button">Chat Zalo
-    </a>
-  </div>
-  <div>
-    <a class="btn btn-sm phone-text" href="tel:0949658615" role="button">0949658615</a>
-  </div>
-</div> -->
 <div class="to-bottom-left">
+  <div>
+    <div class="pulsating-circle-youtube"></div>
+    <div>
+      <a class="btn btn-sm youtube-text mb-2" href="https://www.youtube.com/@PhuongVy-BDSToanCau" role="button">YouTube</a>
+    </div>
+  </div>
+  <div>
+    <div class="pulsating-circle-zalo"></div>
+    <div>
+      <a class="btn btn-sm zalo-text mb-2" href="https://zalo.me/0949658615" role="button">Chat Zalo</a>
+    </div>
+  </div>
+  <div>
+    <div class="pulsating-circle-phone"></div>
+    <a class="btn btn-sm phone-text" href="tel:0949658615" role="button">0949 658 615</a>
+  </div>
+</div>
+<!-- <div class="to-bottom-left">
   <div class="pulse-effect-zalo" (click)="sendZalo()">
     <div class="circle"></div>
     <div class="circle"></div>
@@ -28,7 +37,7 @@
       <a class="btn btn-sm phone-text">0949658615</a>
     </div>
   </div>
-</div>
+</div> -->
 <div class="to-top" (click)="scrollToTop()" [ngClass]="{ 'show-scrollTop': windowScrolled }">
   <a id="back-to-top" class="btn back-to-top space" role="button"><i class="fas fa-space-shuttle fa-rotate-270"></i></a>
 </div>
