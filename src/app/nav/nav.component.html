@@ -1,23 +1,34 @@
 <div class="fixed">
   <div class="container">
-    <div class="d-flex flex-column flex-md-row align-items-center px-md-4 bg-white border-bottom box-shadow" style="justify-content: space-between">
-      <div class="my-0 mr-md-auto font-weight-normal" style="padding: 6px;">
-        <button class="btn-logo" routerLink="/">
-          <img class="header_logo header-logo" height="60" src="../../assets/image/logo-global.png" alt="Bđs toàn cầu land">
-        </button>
+    <nav class="navbar">
+      <div class="logo" routerLink="/trang-chu">
+        <img class="header_logo header-logo" height="60" src="../../assets/image/logo-global.png" alt="Bđs toàn cầu land">
       </div>
-      <nav class="my-2 my-md-0 mr-md-3">
-        <button class="btn-logo home" routerLink="/trang-chu" routerLinkActive="active-nav">Trang chủ
-        </button>
-        <button class="btn-logo intro" routerLink="/gioi-thieu" routerLinkActive="active-nav">Giới thiệu
-        </button>
-        <button class="btn-logo" routerLink="/du-an" routerLinkActive="active-nav">Dự án phân phối
-        </button>
-        <button class="btn-logo" routerLink="/">Tin tức
-        </button>
-        <button class="btn-logo" routerLink="/">Liên hệ
-        </button>
-      </nav>
-    </div>
+      <ul class="nav-links">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="menu">
+          <li><a routerLink="/trang-chu" routerLinkActive="active-nav">Trang chủ</a></li>
+          <li><a routerLink="/gioi-thieu" routerLinkActive="active-nav">Giới thiệu</a></li>
+          <li class="introduce">
+            <a routerLinkActive="active-nav">Dự án phân phối</a>
+            <ul class="dropdown">
+              <li><a routerLink="/du-an/icon-40">Dự án Icon-40 </a></li>
+              <li><a routerLink="/du-an/dragon-castle">Dragon Castle</a></li>
+              <li><a routerLink="/du-an/the-astro-halong-bay">The Astro HaLong Bay</a></li>
+              <li><a routerLink="/du-an/the-holiday-halong">The Holiday Hạ Long</a></li>
+              <li><a routerLink="/du-an/ruby-city-ha-long">Ruby City Hạ Long</a></li>
+              <li><a routerLink="/du-an/sun-grand-ha-long">Sun Grand city Feria Hạ Long</a></li>
+            </ul>
+          </li>
+          <li><a href="/">Tin tức</a></li>
+          <li><a href="/">Liên hệ</a></li>
+        </div>
+      </ul>
+    </nav>
   </div>
 </div>
+
+
+
+

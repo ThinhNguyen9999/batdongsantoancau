@@ -18,12 +18,14 @@ export class HomeComponent implements OnInit {
   slideImgIndex: number = 1;
 
   ngOnInit() {
+
   }
 
   ngAfterViewInit() {
     setInterval(() => {
       this.showNextSlide();
     }, 5000);
+    this.showNextSlide();
     this.showSlidesImgIcon(this.slideImgIndex);
     this.showSlidesImgDragonCastle(this.slideImgIndex);
     this.showSlidesImgAstroHLB(this.slideImgIndex);

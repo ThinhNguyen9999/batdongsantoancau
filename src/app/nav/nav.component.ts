@@ -8,8 +8,6 @@ import { ActivatedRoute, NavigationStart, Router, Event as NavigationEvent } fro
 })
 export class NavComponent implements OnInit {
 
-  constructor() {
-  }
   ngOnInit() {
   }
 }

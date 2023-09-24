@@ -12,6 +12,7 @@ import { AstroComponent } from './projects_bds/astro/astro.component';
 import { HolidayComponent } from './projects_bds/holiday/holiday.component';
 import { RubyCityComponent } from './projects_bds/ruby-city/ruby-city.component';
 import { SunGrandComponent } from './projects_bds/sun-grand/sun-grand.component';
+import { GreenDiamondComponent } from './projects_bds/green-diamond/green-diamond.component';
 
 const routes: Routes = [
   { path: 'trang-chu', component: HomeComponent, title: "Trang chủ - BĐS toàn cầu" },
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'du-an/the-holiday-halong', component: HolidayComponent, title: "The Holiday Hạ Long - BĐS toàn cầu" },
   { path: 'du-an/ruby-city-ha-long', component: RubyCityComponent, title: "Ruby City Hạ Long - BĐS toàn cầu" },
   { path: 'du-an/sun-grand-ha-long', component: SunGrandComponent, title: "Sun Grand City Feria Hạ Long - BĐS toàn cầu" },
+  { path: 'du-an/green-diamond', component: GreenDiamondComponent, title: "Green Diamond Hạ Long - BĐS toàn cầu" },
   { path: '', redirectTo: '/trang-chu', pathMatch: 'full' },
 ];
 
