@@ -12,3 +12,28 @@
 .introduc {
   color: #ffbd59;
 }
+
+.imgSlides {
+  width: 100%;
+  height: 400px;
+}
+
+.img-bds {
+  width: 100%;
+  height: 500px;
+  animation: moveRight 3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .form-dang-ky {
+    margin-top: 15px;
+  }
+
+  .imgSlides {
+    height: 230px;
+  }
+
+  .img-bds{
+    height: 250px;
+  }
+}
