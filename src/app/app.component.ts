@@ -42,7 +42,7 @@ export class AppComponent implements OnInit {
   }
 
   youTube() {
-    location.assign("https://www.youtube.com/@PhuongVy-BDSToanCau/videos");
+    location.assign("https://www.youtube.com/@BDS-Globalproperty/videos");
   }
 
   onActivate(event: any) {
